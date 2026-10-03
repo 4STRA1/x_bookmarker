@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>データ診断</title>
+<style>
+  body{font:15px/1.6 system-ui,sans-serif;margin:0;padding:16px;background:#161b2e;color:#e8ebf5}
+  h1{font-size:18px;margin:0 0 12px}
+  button{font:inherit;padding:10px 14px;margin:4px 4px 4px 0;border:0;border-radius:8px;background:#3b5bdb;color:#fff}
+  button.sub{background:#3a4160}
+  pre{white-space:pre-wrap;word-break:break-all;background:#0e1220;padding:12px;border-radius:8px;min-height:80px}
+  p.note{color:#9aa3c7;font-size:13px}
+</style>
+</head>
+<body>
+<h1>データ診断(読み取り専用)</h1>
+<p class="note">この画面はデータを書き換えません。結果をスクリーンショットで送ってください。</p>
+<button id="run">診断する</button>
+<button id="exTags" class="sub">タグをJSONで保存</button>
+<button id="exPosts" class="sub">投稿をJSONで保存</button>
+<pre id="out">「診断する」を押してください</pre>
+<script>
+const DB_NAME = 'xbm-viewer';
+const out = document.getElementById('out');
+const log = (s) => { out.textContent += '\n' + s; };
+
+async function findDb() {
+  if (!indexedDB.databases) return { unsupported: true };
+  const list = await indexedDB.databases();
+  return { list, hit: list.find(d => d.name === DB_NAME) };
+}
+// DBが存在すると確認できた場合のみ開く(存在しないDBを開くと空のDBが作られてしまうため)
+function openExisting() {
+  return new Promise((ok, ng) => {
+    const r = indexedDB.open(DB_NAME);
+    r.onsuccess = () => ok(r.result);
+    r.onerror = () => ng(r.error);
+    r.onblocked = () => ng(new Error('blocked'));
+  });
+}
+const count = (db, n) => new Promise((ok, ng) => {
+  const q = db.transaction(n).objectStore(n).count();
+  q.onsuccess = () => ok(q.result); q.onerror = () => ng(q.error);
+});
+const all = (db, n) => new Promise((ok, ng) => {
+  const q = db.transaction(n).objectStore(n).getAll();
+  q.onsuccess = () => ok(q.result); q.onerror = () => ng(q.error);
+});
+function download(name, data) {
+  const blob = new Blob([JSON.stringify(data, null, 1)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = name;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+}
+
+document.getElementById('run').onclick = async () => {
+  out.textContent = '診断開始';
+  log('origin: ' + location.origin);
+  try {
+    if (navigator.storage?.persisted) log('永続ストレージ: ' + (await navigator.storage.persisted()));
+    if (navigator.storage?.estimate) {
+      const e = await navigator.storage.estimate();
+      log('使用量/上限: ' + Math.round(e.usage / 1024) + ' KB / ' + Math.round(e.quota / 1048576) + ' MB');
+    }
+  } catch (e) { log('storage情報エラー: ' + e); }
+  try {
+    const regs = await navigator.serviceWorker.getRegistrations();
+    log('Service Worker: ' + regs.length + '件');
+    log('キャッシュ: ' + JSON.stringify(await caches.keys()));
+  } catch (e) { log('SW/キャッシュ確認エラー: ' + e); }
+  try {
+    const r = await findDb();
+    if (r.unsupported) return log('このブラウザは indexedDB.databases() 非対応のため、安全のためDBを開きません');
+    log('DB一覧: ' + JSON.stringify(r.list));
+    if (!r.hit) return log('→ ' + DB_NAME + ' が存在しません(サイトデータが消えた可能性)');
+    const db = await openExisting();
+    log('version: ' + db.version);
+    log('ストア: ' + JSON.stringify([...db.objectStoreNames]));
+    for (const n of db.objectStoreNames) log('  ' + n + ': ' + (await count(db, n)) + '件');
+    db.close();
+  } catch (e) { log('エラー: ' + e); }
+};
+
+async function exportStore(store, file) {
+  try {
+    const r = await findDb();
+    if (r.unsupported || !r.hit) return alert('DBが見つかりません');
+    const db = await openExisting();
+    if (!db.objectStoreNames.contains(store)) { db.close(); return alert(store + ' ストアがありません'); }
+    const rows = await all(db, store);
+    db.close();
+    if (!rows.length) return alert(store + ' は0件です');
+    download(file, rows);
+  } catch (e) { alert('エラー: ' + e); }
+}
+document.getElementById('exTags').onclick = () => exportStore('tags', 'xbm-tags-backup.json');
+document.getElementById('exPosts').onclick = () => exportStore('posts', 'xbm-posts-backup.json');
+</script>
+</body>
+</html>

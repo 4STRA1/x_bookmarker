@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "category": "attribute",
+  "name": "属性",
+  "items": [
+    {
+      "id":"big_breasts","name":"巨乳"
+    },   
+    {
+      "id":"huge_breasts","name":"爆乳"
+    },    
+    {
+      "id":"nomal_breasts","name":"普乳"
+    },    
+    {
+      "id":"loli","name":"ロリ"
+    },   
+    {
+      "id":"beast_ears","name":"ケモ耳"
+    },    
+    {
+      "id":"ツノ","name":"horns"
+    },    
+    {
+      "id":"odd_eye","name":"オッドアイ"
+    },    
+    {
+      "id":"dark_skin","name":"褐色肌"
+    },    
+    {
+      "id":"mesh_hair","name":"メッシュヘアー"
+    },    
+    {
+      "id":"old_sister","name":"お姉さん"
+    },    
+    {
+      "id":"little_sister","name":"妹"
+    }
+  ]
+}

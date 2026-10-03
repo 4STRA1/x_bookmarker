@@ -1,0 +1,13 @@
+{
+  "name": "Xブックマークビューア",
+  "short_name": "BMビューア",
+  "lang": "ja",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#161b2e",
+  "theme_color": "#161b2e",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

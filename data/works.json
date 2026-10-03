@@ -1,0 +1,3589 @@
+{
+  "version": 1,
+  "category": "work",
+  "name": "作品",
+  "items": [
+    {
+      "id": "blue_archive",
+      "name": "ブルーアーカイブ",
+      "aliases": [
+        "ブルアカ",
+        "Blue Archive"
+      ],
+      "characters": [
+        {
+          "id": "sunaookami_shiroko",
+          "name": "砂狼シロコ",
+          "aliases": [
+            "シロコ"
+          ]
+        },
+        {
+          "id": "shiroko_teller",
+          "name": "シロコテラー"
+        },
+        {
+          "id": "purana",
+          "name": "プラナ"
+        },
+        {
+          "id": "arona",
+          "name": "アロナ"
+        },
+        {
+          "id": "shirao_eri",
+          "name": "白尾エリ"
+        },
+        {
+          "id": "tachibana_nozomi",
+          "name": "橘ノゾミ"
+        },
+        {
+          "id": "tachibana_hikari",
+          "name": "橘ヒカリ"
+        },
+        {
+          "id": "takanashi_hoshino",
+          "name": "小鳥遊ホシノ",
+          "aliases": [
+            "ホシノ"
+          ]
+        },
+        {
+          "id": "kuromi_serika",
+          "name": "黒見セリカ",
+          "aliases": [
+            "セリカ"
+          ]
+        },
+        {
+          "id": "izayoi_nonomi",
+          "name": "十六夜ノノミ",
+          "aliases": [
+            "ノノミ"
+          ]
+        },
+        {
+          "id": "okusora_ayane",
+          "name": "奥空アヤネ",
+          "aliases": [
+            "アヤネ"
+          ]
+        },
+        {
+          "id": "otohana_sumire",
+          "name": "乙花スミレ",
+          "aliases": [
+            "スミレ"
+          ]
+        },
+        {
+          "id": "mikamo_neru",
+          "name": "美甘ネル",
+          "aliases": [
+            "ネル"
+          ]
+        },
+        {
+          "id": "saiba_momoi",
+          "name": "才羽モモイ",
+          "aliases": [
+            "モモイ"
+          ]
+        },
+        {
+          "id": "kasuga_tsubaki",
+          "name": "春日ツバキ",
+          "aliases": [
+            "ツバキ"
+          ]
+        },
+        {
+          "id": "kakudate_karin",
+          "name": "角楯カリン",
+          "aliases": [
+            "カリン"
+          ]
+        },
+        {
+          "id": "sumi_serina",
+          "name": "鷲見セリナ",
+          "aliases": [
+            "セリナ"
+          ]
+        },
+        {
+          "id": "omagari_hare",
+          "name": "小鈎ハレ",
+          "aliases": [
+            "ハレ"
+          ]
+        },
+        {
+          "id": "ichinose_asuna",
+          "name": "一之瀬アスナ",
+          "aliases": [
+            "アスナ"
+          ]
+        },
+        {
+          "id": "morizuki_suzumi",
+          "name": "守月スズミ",
+          "aliases": [
+            "スズミ"
+          ]
+        },
+        {
+          "id": "nakatsukasa_kirino",
+          "name": "中務キリノ",
+          "aliases": [
+            "キリノ"
+          ]
+        },
+        {
+          "id": "ajitani_hifumi",
+          "name": "阿慈谷ヒフミ",
+          "aliases": [
+            "ヒフミ"
+          ]
+        },
+        {
+          "id": "hayase_yuuka",
+          "name": "早瀬ユウカ",
+          "aliases": [
+            "ユウカ"
+          ]
+        },
+        {
+          "id": "asagi_mutsuki",
+          "name": "浅黄ムツキ",
+          "aliases": [
+            "ムツキ"
+          ]
+        },
+        {
+          "id": "murokasa_akane",
+          "name": "室笠アカネ",
+          "aliases": [
+            "アカネ"
+          ]
+        },
+        {
+          "id": "hanekawa_hasumi",
+          "name": "羽川ハスミ",
+          "aliases": [
+            "ハスミ"
+          ]
+        },
+        {
+          "id": "onikata_kayoko",
+          "name": "鬼方カヨコ",
+          "aliases": [
+            "カヨコ"
+          ]
+        },
+        {
+          "id": "hinomiya_chinatsu",
+          "name": "火宮チナツ",
+          "aliases": [
+            "チナツ"
+          ]
+        },
+        {
+          "id": "shishido_izumi",
+          "name": "獅子堂イズミ",
+          "aliases": [
+            "イズミ"
+          ]
+        },
+        {
+          "id": "rengawa_cherino",
+          "name": "連河チェリノ",
+          "aliases": [
+            "チェリノ"
+          ]
+        },
+        {
+          "id": "shirasu_azusa",
+          "name": "白洲アズサ",
+          "aliases": [
+            "アズサ"
+          ]
+        },
+        {
+          "id": "shimoe_koharu",
+          "name": "下江コハル",
+          "aliases": [
+            "コハル"
+          ]
+        },
+        {
+          "id": "kenzaki_tsurugi",
+          "name": "剣先ツルギ",
+          "aliases": [
+            "ツルギ"
+          ]
+        },
+        {
+          "id": "shizuyama_mashiro",
+          "name": "静山マシロ",
+          "aliases": [
+            "マシロ"
+          ]
+        },
+        {
+          "id": "rikuhachima_aru",
+          "name": "陸八魔アル",
+          "aliases": [
+            "アル"
+          ]
+        },
+        {
+          "id": "sorasaki_hina",
+          "name": "空崎ヒナ",
+          "aliases": [
+            "ヒナ"
+          ]
+        },
+        {
+          "id": "tendou_alice",
+          "name": "天童アリス",
+          "aliases": [
+            "アリス"
+          ]
+        },
+        {
+          "id": "yakushi_saya",
+          "name": "薬子サヤ",
+          "aliases": [
+            "サヤ"
+          ]
+        },
+        {
+          "id": "asahina_fuuka",
+          "name": "朝比奈フィーナ",
+          "aliases": [
+            "フィーナ"
+          ]
+        },
+        {
+          "id": "asagao_hanae",
+          "name": "朝顔ハナエ",
+          "aliases": [
+            "ハナエ"
+          ]
+        },
+        {
+          "id": "iochi_mari",
+          "name": "伊落マリー",
+          "aliases": [
+            "マリー"
+          ]
+        },
+        {
+          "id": "ushimaki_juri",
+          "name": "牛牧ジュリ",
+          "aliases": [
+            "ジュリ"
+          ]
+        },
+        {
+          "id": "akashi_junko",
+          "name": "赤司ジュンコ",
+          "aliases": [
+            "ジュンコ"
+          ]
+        },
+        {
+          "id": "igusa_haruka",
+          "name": "伊草ハルカ",
+          "aliases": [
+            "ハルカ"
+          ]
+        },
+        {
+          "id": "aikiyo_fuuka",
+          "name": "愛清フウカ",
+          "aliases": [
+            "フウカ"
+          ]
+        },
+        {
+          "id": "izumimoto_eimi",
+          "name": "和泉元エイミ",
+          "aliases": [
+            "エイミ"
+          ]
+        },
+        {
+          "id": "otose_kotama",
+          "name": "音瀬コタマ",
+          "aliases": [
+            "コタマ"
+          ]
+        },
+        {
+          "id": "saiba_midori",
+          "name": "才羽ミドリ",
+          "aliases": [
+            "ミドリ"
+          ]
+        },
+        {
+          "id": "konuri_maki",
+          "name": "小塗マキ",
+          "aliases": [
+            "マキ"
+          ]
+        },
+        {
+          "id": "toyomi_kotori",
+          "name": "豊見コトリ",
+          "aliases": [
+            "コトリ"
+          ]
+        },
+        {
+          "id": "shiraishi_utaha",
+          "name": "白石ウタハ",
+          "aliases": [
+            "ウタハ"
+          ]
+        },
+        {
+          "id": "shiromi_iori",
+          "name": "銀鏡イオリ",
+          "aliases": [
+            "イオリ"
+          ]
+        },
+        {
+          "id": "wanibuchi_akari",
+          "name": "鰐渕アカリ",
+          "aliases": [
+            "アカリ"
+          ]
+        },
+        {
+          "id": "kurodate_haruna",
+          "name": "黒舘ハルナ",
+          "aliases": [
+            "ハルナ"
+          ]
+        },
+        {
+          "id": "endou_shimiko",
+          "name": "円堂シミコ",
+          "aliases": [
+            "シミコ"
+          ]
+        },
+        {
+          "id": "ibaraki_yoshimi",
+          "name": "伊原木ヨシミ",
+          "aliases": [
+            "ヨシミ"
+          ]
+        },
+        {
+          "id": "kurimura_airi",
+          "name": "栗村アイリ",
+          "aliases": [
+            "アイリ"
+          ]
+        },
+        {
+          "id": "nekotsuka_hibiki",
+          "name": "猫塚ヒビキ",
+          "aliases": [
+            "ヒビキ"
+          ]
+        },
+        {
+          "id": "waraku_chise",
+          "name": "和楽チセ",
+          "aliases": [
+            "チセ"
+          ]
+        },
+        {
+          "id": "sunohara_shun",
+          "name": "春原シュン",
+          "aliases": [
+            "シュン"
+          ]
+        },
+        {
+          "id": "kuda_izuna",
+          "name": "久田イズナ",
+          "aliases": [
+            "イズナ"
+          ]
+        },
+        {
+          "id": "kawawa_shizuko",
+          "name": "河和シズコ",
+          "aliases": [
+            "シズコ"
+          ]
+        },
+        {
+          "id": "amami_nodoka",
+          "name": "天見ノドカ",
+          "aliases": [
+            "ノドカ"
+          ]
+        },
+        {
+          "id": "atsuko_hakari",
+          "name": "秤アツコ",
+          "aliases": [
+            "アツコ"
+          ]
+        },
+        {
+          "id": "sora_i_saki",
+          "name": "空井サキ",
+          "aliases": [
+            "サキ"
+          ]
+        },
+        {
+          "id": "saori_joumae",
+          "name": "錠前サオリ",
+          "aliases": [
+            "サオリ"
+          ]
+        },
+        {
+          "id": "himuro_sena",
+          "name": "氷室セナ",
+          "aliases": [
+            "セナ"
+          ]
+        },
+        {
+          "id": "kagami_chihiro",
+          "name": "各務チヒロ",
+          "aliases": [
+            "チヒロ"
+          ]
+        },
+        {
+          "id": "ono_tsukuyo",
+          "name": "大野ツクヨ",
+          "aliases": [
+            "ツクヨ"
+          ]
+        },
+        {
+          "id": "yutori_natsu",
+          "name": "柚鳥ナツ",
+          "aliases": [
+            "ナツ"
+          ]
+        },
+        {
+          "id": "wakaba_hinata",
+          "name": "若葉ヒナタ",
+          "aliases": [
+            "ヒナタ"
+          ]
+        },
+        {
+          "id": "tsuchinaga_hiyori",
+          "name": "槌永ヒヨリ",
+          "aliases": [
+            "ヒヨリ"
+          ]
+        },
+        {
+          "id": "mizuhane_mimori",
+          "name": "水羽ミモリ",
+          "aliases": [
+            "ミモリ"
+          ]
+        },
+        {
+          "id": "tsukiyuki_miyako",
+          "name": "月雪ミヤコ",
+          "aliases": [
+            "ミヤコ"
+          ]
+        },
+        {
+          "id": "kasumizawa_miyu",
+          "name": "霞沢ミユ",
+          "aliases": [
+            "ミユ"
+          ]
+        },
+        {
+          "id": "kazekura_moe",
+          "name": "風倉モエ",
+          "aliases": [
+            "モエ"
+          ]
+        },
+        {
+          "id": "nemugaki_fubuki",
+          "name": "合歓垣フブキ",
+          "aliases": [
+            "フブキ"
+          ]
+        },
+        {
+          "id": "chidor_michiru",
+          "name": "千鳥ミチル",
+          "aliases": [
+            "ミチル"
+          ]
+        },
+        {
+          "id": "hatsune_miku",
+          "name": "初音ミク",
+          "aliases": [
+            "ミク"
+          ]
+        },
+        {
+          "id": "kosaka_wakamo",
+          "name": "狐坂ワカモ",
+          "aliases": [
+            "ワカモ"
+          ]
+        },
+        {
+          "id": "urawa_hanako",
+          "name": "浦和ハナコ",
+          "aliases": [
+            "ハナコ"
+          ]
+        },
+        {
+          "id": "usami_noa",
+          "name": "生塩ノア",
+          "aliases": [
+            "ノア"
+          ]
+        },
+        {
+          "id": "amamori_mine",
+          "name": "蒼森ミネ",
+          "aliases": [
+            "ミネ"
+          ]
+        },
+        {
+          "id": "misono_mika",
+          "name": "聖園ミカ",
+          "aliases": [
+            "ミカ"
+          ]
+        },
+        {
+          "id": "shimokura_megu",
+          "name": "下倉メグ",
+          "aliases": [
+            "メグ"
+          ]
+        },
+        {
+          "id": "ogata_kanna",
+          "name": "尾刃カンナ",
+          "aliases": [
+            "カンナ"
+          ]
+        },
+        {
+          "id": "utazumi_sakurako",
+          "name": "歌住サクラコ",
+          "aliases": [
+            "サクラコ"
+          ]
+        },
+        {
+          "id": "kirifuji_nagisa",
+          "name": "桐藤ナギサ",
+          "aliases": [
+            "ナギサ"
+          ]
+        },
+        {
+          "id": "asuma_toki",
+          "name": "飛鳥馬トキ",
+          "aliases": [
+            "トキ"
+          ]
+        },
+        {
+          "id": "kurosaki_koyuki",
+          "name": "黒崎コユキ",
+          "aliases": [
+            "コユキ"
+          ]
+        },
+        {
+          "id": "kuwakami_kaho",
+          "name": "桑上カホ",
+          "aliases": [
+            "カホ"
+          ]
+        },
+        {
+          "id": "hanaoka_yuzu",
+          "name": "花岡ユズ",
+          "aliases": [
+            "ユズ"
+          ]
+        },
+        {
+          "id": "koseki_ui",
+          "name": "古関ウイ",
+          "aliases": [
+            "ウイ"
+          ]
+        },
+        {
+          "id": "isayami_kaede",
+          "name": "勇美カエデ",
+          "aliases": [
+            "カエデ"
+          ]
+        },
+        {
+          "id": "kyoyama_kazusa",
+          "name": "杏山カズサ",
+          "aliases": [
+            "カズサ"
+          ]
+        },
+        {
+          "id": "sunohara_kokona",
+          "name": "春原ココナ",
+          "aliases": [
+            "ココナ"
+          ]
+        },
+        {
+          "id": "sakura_miyo",
+          "name": "桜井ミヨ",
+          "aliases": [
+            "ミヨ"
+          ]
+        },
+        {
+          "id": "usuba_ritsu",
+          "name": "薄葉リツ",
+          "aliases": [
+            "リツ"
+          ]
+        },
+        {
+          "id": "uzawa_reisa",
+          "name": "宇沢レイサ",
+          "aliases": [
+            "レイサ"
+          ]
+        },
+        {
+          "id": "komakaze_rabu",
+          "name": "河駒風ラブ",
+          "aliases": [
+            "ラブ"
+          ]
+        },
+        {
+          "id": "kakehashi_subaru",
+          "name": "梯スバル",
+          "aliases": [
+            "スバル"
+          ]
+        },
+        {
+          "id": "miyoshi_takane",
+          "name": "三善タカネ",
+          "aliases": [
+            "タカネ"
+          ]
+        },
+        {
+          "id": "aramaki_yakumo",
+          "name": "荒槇ヤクモ",
+          "aliases": [
+            "ヤクモ"
+          ]
+        },
+        {
+          "id": "tsukatsuki_rio",
+          "name": "調月リオ",
+          "aliases": [
+            "リオ"
+          ]
+        },
+        {
+          "id": "akeboshi_himari",
+          "name": "明星ヒマリ",
+          "aliases": [
+            "ヒマリ"
+          ]
+        },
+        {
+          "id": "tendou_kei",
+          "name": "天童ケイ",
+          "aliases": [
+            "ケイ"
+          ]
+        },
+        {
+          "id": "shima_konoka",
+          "name": "志真コノカ",
+          "aliases": [
+            "コノカ"
+          ]
+        },
+        {
+          "id": "kinui_rena",
+          "name": "衣斐レナ",
+          "aliases": [
+            "レナ"
+          ]
+        },
+        {
+          "id": "yoshino_nico",
+          "name": "吉野ニコ",
+          "aliases": [
+            "ニコ"
+          ]
+        },
+        {
+          "id": "takakura_kurumi",
+          "name": "高倉クルミ",
+          "aliases": [
+            "クルミ"
+          ]
+        },
+        {
+          "id": "tenjinyama_otogi",
+          "name": "天神山オトギ",
+          "aliases": [
+            "オトギ"
+          ]
+        },
+        {
+          "id": "hatami_erika",
+          "name": "旗見エリカ",
+          "aliases": [
+            "エリカ"
+          ]
+        },
+        {
+          "id": "goryo_nagusa",
+          "name": "五稜ナグサ",
+          "aliases": [
+            "ナグサ"
+          ]
+        },
+        {
+          "id": "ryuge_kisaki",
+          "name": "龍華キサキ",
+          "aliases": [
+            "キサキ"
+          ]
+        },
+        {
+          "id": "kadenokoji_yukari",
+          "name": "勘解由小路ユカリ",
+          "aliases": [
+            "ユカリ"
+          ]
+        },
+        {
+          "id": "fuwa_renge",
+          "name": "不破レンゲ",
+          "aliases": [
+            "レンゲ"
+          ]
+        },
+        {
+          "id": "kiryu_kikyou",
+          "name": "桐生キキョウ",
+          "aliases": [
+            "キキョウ"
+          ]
+        },
+        {
+          "id": "tenchi_niya",
+          "name": "天地ニヤ",
+          "aliases": [
+            "ニヤ"
+          ]
+        },
+        {
+          "id": "sakujou_tomoe",
+          "name": "佐城トモエ",
+          "aliases": [
+            "トモエ"
+          ]
+        },
+        {
+          "id": "ikegura_marina",
+          "name": "池倉マリナ",
+          "aliases": [
+            "マリナ"
+          ]
+        },
+        {
+          "id": "kayama_reijo",
+          "name": "鹿山レイジョ",
+          "aliases": [
+            "レイジョ"
+          ]
+        },
+        {
+          "id": "yozakura_kirara",
+          "name": "夜桜キララ",
+          "aliases": [
+            "キララ"
+          ]
+        },
+        {
+          "id": "tanga_ibuki",
+          "name": "丹花イブキ",
+          "aliases": [
+            "イブキ"
+          ]
+        },
+        {
+          "id": "hanuma_makoto",
+          "name": "羽沼マコト",
+          "aliases": [
+            "マコト"
+          ]
+        },
+        {
+          "id": "kyogoku_satsuki",
+          "name": "京極サツキ",
+          "aliases": [
+            "サツキ"
+          ]
+        },
+        {
+          "id": "motomiya_chiaki",
+          "name": "本宮チアキ",
+          "aliases": [
+            "チアキ"
+          ]
+        },
+        {
+          "id": "watari_kokoro",
+          "name": "渡海ココロ",
+          "aliases": [
+            "ココロ"
+          ]
+        },
+        {
+          "id": "fuchigami_kotone",
+          "name": "渕上コトネ",
+          "aliases": [
+            "コトネ"
+          ]
+        },
+        {
+          "id": "kinugawa_kasumi",
+          "name": "鬼怒川カスミ",
+          "aliases": [
+            "カスミ"
+          ]
+        },
+        {
+          "id": "nishiki_anna",
+          "name": "仁木アンナ",
+          "aliases": [
+            "アンナ"
+          ]
+        },
+        {
+          "id": "niki_erina",
+          "name": "二木エリナ",
+          "aliases": [
+            "エリナ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "genshin_impact",
+      "name": "原神",
+      "characters": [
+        {
+          "id": "traveler",
+          "name": "旅人",
+          "aliases": [
+            "空",
+            "蛍",
+            "主人公"
+          ]
+        },
+        {
+          "id": "albedo",
+          "name": "アルベド"
+        },
+        {
+          "id": "alhaitham",
+          "name": "アルハイゼン"
+        },
+        {
+          "id": "aloy",
+          "name": "アーロイ"
+        },
+        {
+          "id": "arlecchino",
+          "name": "アルレッキーノ"
+        },
+        {
+          "id": "baizhu",
+          "name": "白朮"
+        },
+        {
+          "id": "chasca",
+          "name": "チャスカ"
+        },
+        {
+          "id": "chiori",
+          "name": "千織"
+        },
+        {
+          "id": "clorinde",
+          "name": "クロリンデ"
+        },
+        {
+          "id": "columbina",
+          "name": "コロンビーナ"
+        },
+        {
+          "id": "dahlia",
+          "name": "ダリア"
+        },
+        {
+          "id": "dehya",
+          "name": "ディシア"
+        },
+        {
+          "id": "diluc",
+          "name": "ディルック"
+        },
+        {
+          "id": "dori",
+          "name": "ドリー"
+        },
+        {
+          "id": "durin",
+          "name": "ドゥリン"
+        },
+        {
+          "id": "emilie",
+          "name": "エミリエ"
+        },
+        {
+          "id": "escoffier",
+          "name": "エスコフィエ"
+        },
+        {
+          "id": "eula",
+          "name": "エウルア"
+        },
+        {
+          "id": "faruzan",
+          "name": "ファルザン"
+        },
+        {
+          "id": "fischl",
+          "name": "フィッシュル"
+        },
+        {
+          "id": "flins",
+          "name": "フリンズ"
+        },
+        {
+          "id": "furina",
+          "name": "フリーナ"
+        },
+        {
+          "id": "ganyu",
+          "name": "甘雨"
+        },
+        {
+          "id": "gaming",
+          "name": "嘉明"
+        },
+        {
+          "id": "gorou",
+          "name": "ゴロー"
+        },
+        {
+          "id": "hu_tao",
+          "name": "胡桃"
+        },
+        {
+          "id": "iansan",
+          "name": "イアンサ"
+        },
+        {
+          "id": "ifa",
+          "name": "イファ"
+        },
+        {
+          "id": "ineffa",
+          "name": "イネファ"
+        },
+        {
+          "id": "itto",
+          "name": "荒瀧一斗"
+        },
+        {
+          "id": "jean",
+          "name": "ジン"
+        },
+        {
+          "id": "kachina",
+          "name": "カチーナ"
+        },
+        {
+          "id": "kaedehara_kazuha",
+          "name": "楓原万葉"
+        },
+        {
+          "id": "kaeya",
+          "name": "ガイア"
+        },
+        {
+          "id": "kamisato_ayaka",
+          "name": "神里綾華"
+        },
+        {
+          "id": "kamisato_ayato",
+          "name": "神里綾人"
+        },
+        {
+          "id": "kaveh",
+          "name": "カーヴェ"
+        },
+        {
+          "id": "keqing",
+          "name": "刻晴"
+        },
+        {
+          "id": "kinich",
+          "name": "キィニチ"
+        },
+        {
+          "id": "kirara",
+          "name": "綺良々"
+        },
+        {
+          "id": "klee",
+          "name": "クレー"
+        },
+        {
+          "id": "kujou_sara",
+          "name": "九条裟羅"
+        },
+        {
+          "id": "kuki_shinobu",
+          "name": "久岐忍"
+        },
+        {
+          "id": "lauma",
+          "name": "ラウマ"
+        },
+        {
+          "id": "layla",
+          "name": "レイラ"
+        },
+        {
+          "id": "lisa",
+          "name": "リサ"
+        },
+        {
+          "id": "lynette",
+          "name": "リネット"
+        },
+        {
+          "id": "lyney",
+          "name": "リネ"
+        },
+        {
+          "id": "mavuika",
+          "name": "マーヴィカ"
+        },
+        {
+          "id": "mika",
+          "name": "ミカ"
+        },
+        {
+          "id": "mona",
+          "name": "モナ"
+        },
+        {
+          "id": "mualani",
+          "name": "ムアラニ"
+        },
+        {
+          "id": "nahida",
+          "name": "ナヒーダ"
+        },
+        {
+          "id": "navia",
+          "name": "ナヴィア"
+        },
+        {
+          "id": "nefer",
+          "name": "ネフェル"
+        },
+        {
+          "id": "neuvillette",
+          "name": "ヌヴィレット"
+        },
+        {
+          "id": "nilou",
+          "name": "ニィロウ"
+        },
+        {
+          "id": "ningguang",
+          "name": "凝光"
+        },
+        {
+          "id": "noelle",
+          "name": "ノエル"
+        },
+        {
+          "id": "ororon",
+          "name": "オロルン"
+        },
+        {
+          "id": "qiqi",
+          "name": "七七"
+        },
+        {
+          "id": "raiden_shogun",
+          "name": "雷電将軍"
+        },
+        {
+          "id": "razor",
+          "name": "レザー"
+        },
+        {
+          "id": "rosaria",
+          "name": "ロサリア"
+        },
+        {
+          "id": "sangonomiya_kokomi",
+          "name": "珊瑚宮心海"
+        },
+        {
+          "id": "sayu",
+          "name": "早柚"
+        },
+        {
+          "id": "shenhe",
+          "name": "申鶴"
+        },
+        {
+          "id": "sigewinne",
+          "name": "シグウィン"
+        },
+        {
+          "id": "skirk",
+          "name": "スカーク"
+        },
+        {
+          "id": "sucrose",
+          "name": "スクロース"
+        },
+        {
+          "id": "tartaglia",
+          "name": "タルタリヤ"
+        },
+        {
+          "id": "tighnari",
+          "name": "ティナリ"
+        },
+        {
+          "id": "venti",
+          "name": "ウェンティ"
+        },
+        {
+          "id": "wanderer",
+          "name": "放浪者",
+          "aliases": [
+            "スカラマシュ",
+            "散兵"
+          ]
+        },
+        {
+          "id": "wriothesley",
+          "name": "リオセスリ"
+        },
+        {
+          "id": "xianyun",
+          "name": "閑雲"
+        },
+        {
+          "id": "xiao",
+          "name": "魈"
+        },
+        {
+          "id": "xilonen",
+          "name": "シロネン"
+        },
+        {
+          "id": "yae_miko",
+          "name": "八重神子"
+        },
+        {
+          "id": "yelan",
+          "name": "夜蘭"
+        },
+        {
+          "id": "yoimiya",
+          "name": "宵宮"
+        },
+        {
+          "id": "yunjin",
+          "name": "雲菫"
+        },
+        {
+          "id": "zhongli",
+          "name": "鍾離"
+        },
+        {
+          "id": "amber",
+          "name": "アンバー"
+        },
+        {
+          "id": "barbara",
+          "name": "バーバラ"
+        },
+        {
+          "id": "beidou",
+          "name": "北斗"
+        },
+        {
+          "id": "bennett",
+          "name": "ベネット"
+        },
+        {
+          "id": "candace",
+          "name": "キャンディス"
+        },
+        {
+          "id": "charlotte",
+          "name": "シャルロット"
+        },
+        {
+          "id": "chevreuse",
+          "name": "シュヴルーズ"
+        },
+        {
+          "id": "chongyun",
+          "name": "重雲"
+        },
+        {
+          "id": "collei",
+          "name": "コレイ"
+        },
+        {
+          "id": "diona",
+          "name": "ディオナ"
+        },
+        {
+          "id": "freminet",
+          "name": "フレミネ"
+        },
+        {
+          "id": "heizou",
+          "name": "鹿野院平蔵"
+        },
+        {
+          "id": "lanzan",
+          "name": "藍硯"
+        },
+        {
+          "id": "sethos",
+          "name": "セトス"
+        },
+        {
+          "id": "thoma",
+          "name": "トーマ"
+        },
+        {
+          "id": "xiangling",
+          "name": "香菱"
+        },
+        {
+          "id": "xingqiu",
+          "name": "行秋"
+        },
+        {
+          "id": "xinyan",
+          "name": "辛炎"
+        },
+        {
+          "id": "yanfei",
+          "name": "煙緋"
+        },
+        {
+          "id": "yaoyao",
+          "name": "ヨォーヨ"
+        },
+        {
+          "id": "yafoda",
+          "name": "ヤフォダ"
+        },
+        {
+          "id": "prune",
+          "name": "プルーネ"
+        },
+        {
+          "id": "alyosha",
+          "name": "アリョーシャ"
+        },
+        {
+          "id": "aino",
+          "name": "アイノ"
+        },
+        {
+          "id": "iluga",
+          "name": "イルーガ"
+        },
+        {
+          "id": "iasha",
+          "name": "ヤフォダ"
+        }
+      ]
+    },
+    {
+      "id": "nikke",
+      "name": "勝利の女神：NIKKE",
+      "aliases": [
+        "NIKKE",
+        "ニケ",
+        "メガニケ"
+      ],
+      "characters": [
+        {
+          "id": "sin",
+          "name": "シン"
+        },
+        {
+          "id": "guilty",
+          "name": "ギルティ"
+        },
+        {
+          "id": "drake",
+          "name": "ドレイク"
+        },
+        {
+          "id": "queen",
+          "name": "クイーン"
+        },
+        {
+          "id": "aigis",
+          "name": "アイギス"
+        },
+        {
+          "id": "yukiko",
+          "name": "天城雪子",
+          "aliases": [
+            "雪子"
+          ]
+        },
+        {
+          "id": "maxwell",
+          "name": "マクスウェル"
+        },
+        {
+          "id": "laplace",
+          "name": "ラプラス"
+        },
+        {
+          "id": "cinderella",
+          "name": "シンデレラ"
+        },
+        {
+          "id": "marciana",
+          "name": "マルチャーナ"
+        },
+        {
+          "id": "black",
+          "name": "アークレンジャー・ブラック",
+          "aliases": [
+            "ブラック"
+          ]
+        },
+        {
+          "id": "prika",
+          "name": "プリカ"
+        },
+        {
+          "id": "mint",
+          "name": "ミント"
+        },
+        {
+          "id": "neon",
+          "name": "ネオン"
+        },
+        {
+          "id": "avista",
+          "name": "アビスタ"
+        },
+        {
+          "id": "anis",
+          "name": "アニス"
+        },
+        {
+          "id": "shiratsuru",
+          "name": "シラツル"
+        },
+        {
+          "id": "arcana",
+          "name": "アルカナ"
+        },
+        {
+          "id": "eh",
+          "name": "E.H."
+        },
+        {
+          "id": "kurumi",
+          "name": "クルミ"
+        },
+        {
+          "id": "takina",
+          "name": "井ノ上たきな",
+          "aliases": [
+            "たきな"
+          ]
+        },
+        {
+          "id": "chisato",
+          "name": "錦木千束",
+          "aliases": [
+            "千束"
+          ]
+        },
+        {
+          "id": "velvet",
+          "name": "ベルベット"
+        },
+        {
+          "id": "label",
+          "name": "レーベル"
+        },
+        {
+          "id": "snow_white",
+          "name": "スノーホワイト"
+        },
+        {
+          "id": "brid",
+          "name": "ブリッド"
+        },
+        {
+          "id": "diesel",
+          "name": "ディーゼル"
+        },
+        {
+          "id": "soline",
+          "name": "ソリン"
+        },
+        {
+          "id": "chime",
+          "name": "チャイム"
+        },
+        {
+          "id": "river_rerio",
+          "name": "リバーレリオ"
+        },
+        {
+          "id": "delta",
+          "name": "デルタ"
+        },
+        {
+          "id": "claire",
+          "name": "クレア"
+        },
+        {
+          "id": "ada",
+          "name": "エイダ"
+        },
+        {
+          "id": "jill",
+          "name": "ジル"
+        },
+        {
+          "id": "milk",
+          "name": "ミルク"
+        },
+        {
+          "id": "ade",
+          "name": "エード"
+        },
+        {
+          "id": "pinocchio",
+          "name": "ピノキオ"
+        },
+        {
+          "id": "nayuta",
+          "name": "ナユタ"
+        },
+        {
+          "id": "vesti",
+          "name": "ベスティー"
+        },
+        {
+          "id": "emma",
+          "name": "エマ"
+        },
+        {
+          "id": "dorothy",
+          "name": "ドロシー"
+        },
+        {
+          "id": "elegg",
+          "name": "エレグ"
+        },
+        {
+          "id": "sora",
+          "name": "ソラ"
+        },
+        {
+          "id": "lily",
+          "name": "リリー"
+        },
+        {
+          "id": "raven",
+          "name": "レイヴン"
+        },
+        {
+          "id": "eve",
+          "name": "イヴ"
+        },
+        {
+          "id": "k",
+          "name": "K"
+        },
+        {
+          "id": "molly",
+          "name": "モリー"
+        },
+        {
+          "id": "mihara",
+          "name": "ミハラ"
+        },
+        {
+          "id": "little_mermaid",
+          "name": "リトルマーメイド"
+        },
+        {
+          "id": "crust",
+          "name": "クラスト"
+        },
+        {
+          "id": "bready",
+          "name": "ブレッディ"
+        },
+        {
+          "id": "trina",
+          "name": "トリナ"
+        },
+        {
+          "id": "sakura",
+          "name": "サクラ"
+        },
+        {
+          "id": "rei",
+          "name": "綾波レイ",
+          "aliases": [
+            "レイ"
+          ]
+        },
+        {
+          "id": "asuka",
+          "name": "式波・アスカ・ラングレー",
+          "aliases": [
+            "アスカ"
+          ]
+        },
+        {
+          "id": "misato",
+          "name": "葛城ミサト",
+          "aliases": [
+            "ミサト"
+          ]
+        },
+        {
+          "id": "mari",
+          "name": "真希波・マリ・イラストリアス",
+          "aliases": [
+            "マリ"
+          ]
+        },
+        {
+          "id": "zweii",
+          "name": "ツバイ"
+        },
+        {
+          "id": "ein",
+          "name": "アイン"
+        },
+        {
+          "id": "clay",
+          "name": "クレイ"
+        },
+        {
+          "id": "alice",
+          "name": "アリス"
+        },
+        {
+          "id": "soda",
+          "name": "ソーダ"
+        },
+        {
+          "id": "trony",
+          "name": "トロニー"
+        },
+        {
+          "id": "kilo",
+          "name": "キロ"
+        },
+        {
+          "id": "crown",
+          "name": "クラウン"
+        },
+        {
+          "id": "bay",
+          "name": "ベイ"
+        },
+        {
+          "id": "ram",
+          "name": "ラム"
+        },
+        {
+          "id": "rem",
+          "name": "レム"
+        },
+        {
+          "id": "emilia",
+          "name": "エミリア"
+        },
+        {
+          "id": "d_killer_wife",
+          "name": "D"
+        },
+        {
+          "id": "marian",
+          "name": "マリアン"
+        },
+        {
+          "id": "moran",
+          "name": "モラン"
+        },
+        {
+          "id": "leona",
+          "name": "レオナ"
+        },
+        {
+          "id": "guren",
+          "name": "紅蓮"
+        },
+        {
+          "id": "mica",
+          "name": "ミカ"
+        },
+        {
+          "id": "ludmilla",
+          "name": "ルドミラ"
+        },
+        {
+          "id": "tove",
+          "name": "トーブ"
+        },
+        {
+          "id": "red_hood",
+          "name": "レッドフード"
+        },
+        {
+          "id": "guillotine",
+          "name": "ギロチン"
+        },
+        {
+          "id": "maiden",
+          "name": "メイデン"
+        },
+        {
+          "id": "flora",
+          "name": "フローラ"
+        },
+        {
+          "id": "grave",
+          "name": "グレイブ"
+        },
+        {
+          "id": "rapunzel",
+          "name": "ラプンツェル"
+        },
+        {
+          "id": "quency",
+          "name": "クエンシー"
+        },
+        {
+          "id": "phantom",
+          "name": "ファントム"
+        },
+        {
+          "id": "rouge",
+          "name": "ルージュ"
+        },
+        {
+          "id": "twins",
+          "name": "ブラン"
+        },
+        {
+          "id": "noir",
+          "name": "ノワール"
+        },
+        {
+          "id": "helm",
+          "name": "ヘルム"
+        },
+        {
+          "id": "mast",
+          "name": "マスト"
+        },
+        {
+          "id": "neve",
+          "name": "ネヴェ"
+        },
+        {
+          "id": "n102",
+          "name": "N102"
+        },
+        {
+          "id": "admi",
+          "name": "アドミ"
+        },
+        {
+          "id": "aria",
+          "name": "アリア"
+        },
+        {
+          "id": "isabel",
+          "name": "イサベル"
+        },
+        {
+          "id": "yunhwa",
+          "name": "ウンファ"
+        },
+        {
+          "id": "ether",
+          "name": "エーテル"
+        },
+        {
+          "id": "exia",
+          "name": "エクシア"
+        },
+        {
+          "id": "epinel",
+          "name": "エピネル"
+        },
+        {
+          "id": "ocean",
+          "name": "オーシャン"
+        },
+        {
+          "id": "crow",
+          "name": "クロウ"
+        },
+        {
+          "id": "sun",
+          "name": "サン"
+        },
+        {
+          "id": "signal",
+          "name": "シグナル"
+        },
+        {
+          "id": "sugar",
+          "name": "シュガー"
+        },
+        {
+          "id": "julia",
+          "name": "ジュリア"
+        },
+        {
+          "id": "centi",
+          "name": "センチ"
+        },
+        {
+          "id": "soldier_eg",
+          "name": "ソルジャーEG"
+        },
+        {
+          "id": "soldier_fa",
+          "name": "ソルジャーFA"
+        },
+        {
+          "id": "soldier_ow",
+          "name": "ソルジャーOW"
+        },
+        {
+          "id": "dolla",
+          "name": "ドラー"
+        },
+        {
+          "id": "novel",
+          "name": "ノベル"
+        },
+        {
+          "id": "haran",
+          "name": "ハラン"
+        },
+        {
+          "id": "folkwang",
+          "name": "フォルクヴァン"
+        },
+        {
+          "id": "flower",
+          "name": "フラワー"
+        },
+        {
+          "id": "privaty",
+          "name": "プリバティ"
+        },
+        {
+          "id": "prim",
+          "name": "プリム"
+        },
+        {
+          "id": "product_08",
+          "name": "プロダクト08"
+        },
+        {
+          "id": "product_12",
+          "name": "プロダクト12"
+        },
+        {
+          "id": "product_23",
+          "name": "プロダクト23"
+        },
+        {
+          "id": "pepper",
+          "name": "ペッパー"
+        },
+        {
+          "id": "bellota",
+          "name": "ベロータ"
+        },
+        {
+          "id": "poly",
+          "name": "ポリ"
+        },
+        {
+          "id": "volume",
+          "name": "ボリューム"
+        },
+        {
+          "id": "miranda",
+          "name": "ミランダ"
+        },
+        {
+          "id": "merry",
+          "name": "メアリー"
+        },
+        {
+          "id": "yan",
+          "name": "ヤン"
+        },
+        {
+          "id": "uni",
+          "name": "ユニ"
+        },
+        {
+          "id": "yulha",
+          "name": "ユルハ"
+        },
+        {
+          "id": "rappi",
+          "name": "ラピ"
+        },
+        {
+          "id": "liter",
+          "name": "リター"
+        },
+        {
+          "id": "rupi",
+          "name": "ルピー"
+        },
+        {
+          "id": "jackal",
+          "name": "ジャッカル"
+        },
+        {
+          "id": "modernia",
+          "name": "モダニア"
+        },
+        {
+          "id": "nihilister",
+          "name": "ニヒリスター"
+        },
+        {
+          "id": "noah",
+          "name": "ノア"
+        },
+        {
+          "id": "doro",
+          "name": "ドロシー"
+        }
+      ]
+    },
+    {
+      "id": "arknights",
+      "name": "アークナイツ",
+      "characters": [
+        {
+          "id": "hoshiguma",
+          "name": "ホシグマ"
+        },
+        {
+          "id": "exusiai",
+          "name": "エクシア"
+        },
+        {
+          "id": "ifrit",
+          "name": "イフリータ"
+        },
+        {
+          "id": "saria",
+          "name": "サリア"
+        },
+        {
+          "id": "siege",
+          "name": "シージ"
+        },
+        {
+          "id": "shining",
+          "name": "シャイニング"
+        },
+        {
+          "id": "eyjafjalla",
+          "name": "エイヤフィヤトラ"
+        },
+        {
+          "id": "nightingale",
+          "name": "ナイチンゲール"
+        },
+        {
+          "id": "angelina",
+          "name": "アンジェリーナ"
+        },
+        {
+          "id": "skadi",
+          "name": "スカジ"
+        },
+        {
+          "id": "chen",
+          "name": "チェン"
+        },
+        {
+          "id": "schwarz",
+          "name": "シュヴァルツ"
+        },
+        {
+          "id": "magallan",
+          "name": "マゼラン"
+        },
+        {
+          "id": "mostima",
+          "name": "モスティマ"
+        },
+        {
+          "id": "blaze",
+          "name": "ブレイズ"
+        },
+        {
+          "id": "nian",
+          "name": "ニェン"
+        },
+        {
+          "id": "kaltsit",
+          "name": "ケルシー"
+        },
+        {
+          "id": "ceobe",
+          "name": "ケオベ"
+        },
+        {
+          "id": "bagpipe",
+          "name": "バグパイプ"
+        },
+        {
+          "id": "weedy",
+          "name": "ウィーディ"
+        },
+        {
+          "id": "w",
+          "name": "W"
+        },
+        {
+          "id": "rosa",
+          "name": "ロサ"
+        },
+        {
+          "id": "suzuran",
+          "name": "スズラン"
+        },
+        {
+          "id": "eunectes",
+          "name": "ユーネクテス"
+        },
+        {
+          "id": "surt",
+          "name": "スルト"
+        },
+        {
+          "id": "blemishine",
+          "name": "ブレミシャイン"
+        },
+        {
+          "id": "rosmontis",
+          "name": "ロスモンティス"
+        },
+        {
+          "id": "mudrock",
+          "name": "マドロック"
+        },
+        {
+          "id": "archetto",
+          "name": "アルケット"
+        },
+        {
+          "id": "dusk",
+          "name": "シー"
+        },
+        {
+          "id": "saga",
+          "name": "サガ"
+        },
+        {
+          "id": "ash",
+          "name": "Ash"
+        },
+        {
+          "id": "gladiia",
+          "name": "グレイディーア"
+        },
+        {
+          "id": "carnelian",
+          "name": "カーネリアン"
+        },
+        {
+          "id": "pallas",
+          "name": "パラス"
+        },
+        {
+          "id": "saileach",
+          "name": "サイラッハ"
+        },
+        {
+          "id": "fartooth",
+          "name": "ファートゥース"
+        },
+        {
+          "id": "flametail",
+          "name": "フレイムテイル"
+        },
+        {
+          "id": "ling",
+          "name": "リィン"
+        },
+        {
+          "id": "goldenglow",
+          "name": "ゴールデングロー"
+        },
+        {
+          "id": "fiammetta",
+          "name": "フィアメッタ"
+        },
+        {
+          "id": "horn",
+          "name": "ホルン"
+        },
+        {
+          "id": "specter",
+          "name": "スペクター"
+        },
+        {
+          "id": "irene",
+          "name": "アイリーニ"
+        },
+        {
+          "id": "gavial",
+          "name": "ガヴィル"
+        },
+        {
+          "id": "pozemka",
+          "name": "パゼオンカ"
+        },
+        {
+          "id": "dorothy",
+          "name": "ドロシー"
+        },
+        {
+          "id": "penance",
+          "name": "ペナンス"
+        },
+        {
+          "id": "reed",
+          "name": "リード"
+        },
+        {
+          "id": "lin",
+          "name": "リン"
+        },
+        {
+          "id": "chongyue",
+          "name": "チューバイ"
+        },
+        {
+          "id": "yato",
+          "name": "ヤトウ"
+        },
+        {
+          "id": "ines",
+          "name": "イネス"
+        },
+        {
+          "id": "hoederer",
+          "name": "ホルハイヤ"
+        },
+        {
+          "id": "muelsyse",
+          "name": "ミュルジス"
+        },
+        {
+          "id": "silence",
+          "name": "サイレンス"
+        },
+        {
+          "id": "typhon",
+          "name": "ティフォン"
+        },
+        {
+          "id": "jessica",
+          "name": "ジェシカ"
+        },
+        {
+          "id": "virtuosa",
+          "name": "ヴィルトゥオーサ"
+        },
+        {
+          "id": "viviana",
+          "name": "ヴィヴィアナ"
+        },
+        {
+          "id": "degenbrecher",
+          "name": "デーゲンブレヒャー"
+        },
+        {
+          "id": "ray",
+          "name": "レイ"
+        },
+        {
+          "id": "shu",
+          "name": "シュウ"
+        },
+        {
+          "id": "ela",
+          "name": "Ela"
+        },
+        {
+          "id": "ascalon",
+          "name": "アスカロン"
+        },
+        {
+          "id": "wisadel",
+          "name": "ウィシャデル"
+        },
+        {
+          "id": "civilight_eternia",
+          "name": "シヴィライト・エテルナ"
+        },
+        {
+          "id": "narantuya",
+          "name": "ナラントゥヤ"
+        },
+        {
+          "id": "pepe",
+          "name": "ペペ"
+        },
+        {
+          "id": "nymph",
+          "name": "ニンフ"
+        },
+        {
+          "id": "marcille",
+          "name": "マルシル"
+        },
+        {
+          "id": "vina_victoria",
+          "name": "ヴィーナ・ヴィクトリア"
+        },
+        {
+          "id": "crownslayer",
+          "name": "クラウンスレイヤー"
+        },
+        {
+          "id": "ulpispholia",
+          "name": "ウルピスフォリア"
+        },
+        {
+          "id": "lappland",
+          "name": "ラップランド"
+        },
+        {
+          "id": "entelekeia",
+          "name": "エンテレケイア"
+        },
+        {
+          "id": "necrass",
+          "name": "ネクラス"
+        },
+        {
+          "id": "lemuen",
+          "name": "レミュアン"
+        },
+        {
+          "id": "haruka",
+          "name": "ハルカ"
+        },
+        {
+          "id": "mantra",
+          "name": "マントラ"
+        },
+        {
+          "id": "nasty",
+          "name": "ナスティ"
+        },
+        {
+          "id": "titi",
+          "name": "ティティ"
+        },
+        {
+          "id": "amiya",
+          "name": "アーミヤ"
+        },
+        {
+          "id": "nearland",
+          "name": "ニアール"
+        },
+        {
+          "id": "red",
+          "name": "レッド"
+        },
+        {
+          "id": "croissant",
+          "name": "クロワッサン"
+        },
+        {
+          "id": "texas",
+          "name": "テキサス"
+        },
+        {
+          "id": "ptilopsis",
+          "name": "フィリオプシス"
+        },
+        {
+          "id": "franka",
+          "name": "フランカ"
+        },
+        {
+          "id": "liskarm",
+          "name": "リスカム"
+        },
+        {
+          "id": "meteorite",
+          "name": "メテオリーテ"
+        },
+        {
+          "id": "firewatch",
+          "name": "ファイヤーウォッチ"
+        },
+        {
+          "id": "feater",
+          "name": "エフイーター"
+        },
+        {
+          "id": "pramanix",
+          "name": "プラマニクス"
+        },
+        {
+          "id": "cliffheart",
+          "name": "クリフハート"
+        },
+        {
+          "id": "zima",
+          "name": "ズィマー"
+        },
+        {
+          "id": "istina",
+          "name": "イースチナ"
+        },
+        {
+          "id": "sora",
+          "name": "ソラ"
+        },
+        {
+          "id": "azurian",
+          "name": "アズリウス"
+        },
+        {
+          "id": "provence",
+          "name": "プロヴァンス"
+        },
+        {
+          "id": "platinum",
+          "name": "プラチナ"
+        },
+        {
+          "id": "skyfire",
+          "name": "スカイフレア"
+        },
+        {
+          "id": "meyer",
+          "name": "メイヤー"
+        },
+        {
+          "id": "manticore",
+          "name": "マンティコア"
+        },
+        {
+          "id": "warfaring",
+          "name": "ワルファリン"
+        },
+        {
+          "id": "vulcan",
+          "name": "ヴァルカン"
+        },
+        {
+          "id": "savage",
+          "name": "サベージ"
+        },
+        {
+          "id": "nightmare",
+          "name": "ナイトメア"
+        },
+        {
+          "id": "indra",
+          "name": "インドラ"
+        },
+        {
+          "id": "grani",
+          "name": "グラニ"
+        },
+        {
+          "id": "swire",
+          "name": "スワイヤー"
+        },
+        {
+          "id": "glaucus",
+          "name": "グラウコス"
+        },
+        {
+          "id": "ceylon",
+          "name": "セイロン"
+        },
+        {
+          "id": "astesia",
+          "name": "アステシア"
+        },
+        {
+          "id": "breeze",
+          "name": "ブリーズ"
+        },
+        {
+          "id": "waai_fu",
+          "name": "ワイフー"
+        },
+        {
+          "id": "leizi",
+          "name": "レイズ"
+        },
+        {
+          "id": "baibai",
+          "name": "バイビーク"
+        },
+        {
+          "id": "sideroca",
+          "name": "シデロカ"
+        },
+        {
+          "id": "shamare",
+          "name": "シャマレ"
+        },
+        {
+          "id": "asbestos",
+          "name": "アスベストス"
+        },
+        {
+          "id": "tsukinogi",
+          "name": "ツキノギ"
+        },
+        {
+          "id": "absinthe",
+          "name": "アブサント"
+        },
+        {
+          "id": "folinic",
+          "name": "フォリニック"
+        },
+        {
+          "id": "beeswax",
+          "name": "ビーズワクス"
+        },
+        {
+          "id": "andrena",
+          "name": "アンドレアナ"
+        },
+        {
+          "id": "scene",
+          "name": "シーン"
+        },
+        {
+          "id": "flint",
+          "name": "フリント"
+        },
+        {
+          "id": "tomimi",
+          "name": "トミミ"
+        },
+        {
+          "id": "april",
+          "name": "エイプリル"
+        },
+        {
+          "id": "mint",
+          "name": "ミント"
+        },
+        {
+          "id": "whislash",
+          "name": "ウィスラッシュ"
+        },
+        {
+          "id": "whisperain",
+          "name": "ウィスパーレイン"
+        },
+        {
+          "id": "robin",
+          "name": "ロビン"
+        },
+        {
+          "id": "kafka",
+          "name": "カフカ"
+        },
+        {
+          "id": "iris",
+          "name": "アイリス"
+        },
+        {
+          "id": "tuye",
+          "name": "トゥイエ"
+        },
+        {
+          "id": "lava",
+          "name": "ラヴァ"
+        },
+        {
+          "id": "frost",
+          "name": "Frost"
+        },
+        {
+          "id": "togifons",
+          "name": "トギフォンス"
+        },
+        {
+          "id": "heavyrain",
+          "name": "ヘビーレイン"
+        },
+        {
+          "id": "akafuyu",
+          "name": "アカフユ"
+        },
+        {
+          "id": "kirara",
+          "name": "キララ"
+        },
+        {
+          "id": "bena",
+          "name": "ベナ"
+        },
+        {
+          "id": "la_pluma",
+          "name": "ラ・プルマ"
+        },
+        {
+          "id": "mulberry",
+          "name": "マルベリー"
+        },
+        {
+          "id": "ashlock",
+          "name": "アッシュロック"
+        },
+        {
+          "id": "wildmane",
+          "name": "ワイルドメイン"
+        },
+        {
+          "id": "honeyberry",
+          "name": "ハニーベリー"
+        },
+        {
+          "id": "aurora",
+          "name": "オーロラ"
+        },
+        {
+          "id": "yela",
+          "name": "イェラ"
+        },
+        {
+          "id": "qishenglu",
+          "name": "九色鹿"
+        },
+        {
+          "id": "blacknight",
+          "name": "ブラックナイト"
+        },
+        {
+          "id": "quercus",
+          "name": "クエルクス"
+        },
+        {
+          "id": "kazemaru",
+          "name": "カゼマル"
+        },
+        {
+          "id": "rockrock",
+          "name": "ロックロック"
+        },
+        {
+          "id": "heidi",
+          "name": "ハイディ"
+        },
+        {
+          "id": "eratoh",
+          "name": "エラト"
+        },
+        {
+          "id": "cantabile",
+          "name": "カンタービレ"
+        },
+        {
+          "id": "astegenne",
+          "name": "アステジーニ"
+        },
+        {
+          "id": "proviso",
+          "name": "プロヴァイゾ"
+        },
+        {
+          "id": "dagda",
+          "name": "ダグザ"
+        },
+        {
+          "id": "paprika",
+          "name": "パプリカ"
+        },
+        {
+          "id": "lunacub",
+          "name": "ルナカブ"
+        },
+        {
+          "id": "highmore",
+          "name": "ハイモア"
+        },
+        {
+          "id": "harmony",
+          "name": "ハーモニー"
+        },
+        {
+          "id": "firewhistle",
+          "name": "ファイヤーホイッスル"
+        },
+        {
+          "id": "jieyun",
+          "name": "ジエユン"
+        },
+        {
+          "id": "windchime",
+          "name": "ウィンドチャイム"
+        },
+        {
+          "id": "cement",
+          "name": "セメント"
+        },
+        {
+          "id": "morgan",
+          "name": "モーガン"
+        },
+        {
+          "id": "melanite",
+          "name": "メラナイト"
+        },
+        {
+          "id": "spuria",
+          "name": "スプリア"
+        },
+        {
+          "id": "poncirus",
+          "name": "ポンシラス"
+        },
+        {
+          "id": "santalla",
+          "name": "サンタラ"
+        },
+        {
+          "id": "valarqvin",
+          "name": "ヴァラルクビン"
+        },
+        {
+          "id": "almond",
+          "name": "アーモンド"
+        },
+        {
+          "id": "coldshot",
+          "name": "コールドショット"
+        },
+        {
+          "id": "vandera",
+          "name": "ヴァンデラ"
+        },
+        {
+          "id": "delphine",
+          "name": "デルフィーン"
+        },
+        {
+          "id": "rieta",
+          "name": "リェータ"
+        },
+        {
+          "id": "warmy",
+          "name": "ウォーミー"
+        },
+        {
+          "id": "grainbuds",
+          "name": "グレインバッズ"
+        },
+        {
+          "id": "kestrel",
+          "name": "ケストレル"
+        },
+        {
+          "id": "iana",
+          "name": "Iana"
+        },
+        {
+          "id": "aroma",
+          "name": "アロマ"
+        },
+        {
+          "id": "lucilla",
+          "name": "ルシーラ"
+        },
+        {
+          "id": "papyrus",
+          "name": "パピルス"
+        },
+        {
+          "id": "katherine",
+          "name": "キャサリン"
+        },
+        {
+          "id": "philae",
+          "name": "フィラエ"
+        },
+        {
+          "id": "rose_salt",
+          "name": "ローズソルト"
+        },
+        {
+          "id": "techno",
+          "name": "テクノ"
+        },
+        {
+          "id": "shinzhu",
+          "name": "シィンズゥ"
+        },
+        {
+          "id": "surfer",
+          "name": "サーファー"
+        },
+        {
+          "id": "brigid",
+          "name": "ブリギッド"
+        },
+        {
+          "id": "wolfenite",
+          "name": "ウルフェナイト"
+        },
+        {
+          "id": "alanna",
+          "name": "アランナ"
+        },
+        {
+          "id": "miss_christine",
+          "name": "ミスクリスティーン"
+        },
+        {
+          "id": "tippi",
+          "name": "ティッピ"
+        },
+        {
+          "id": "kichisei",
+          "name": "キチセイ"
+        },
+        {
+          "id": "nyamu",
+          "name": "祐天寺にゃむ"
+        },
+        {
+          "id": "kairin",
+          "name": "八幡海鈴"
+        },
+        {
+          "id": "mutsumi",
+          "name": "若葉睦"
+        },
+        {
+          "id": "uika",
+          "name": "三角初華"
+        },
+        {
+          "id": "dobermann",
+          "name": "ドーベルマン"
+        },
+        {
+          "id": "shaw",
+          "name": "ショウ"
+        },
+        {
+          "id": "vigna",
+          "name": "ヴィグナ"
+        },
+        {
+          "id": "scavenger",
+          "name": "スカベンジャー"
+        },
+        {
+          "id": "frostleaf",
+          "name": "フロストリーフ"
+        },
+        {
+          "id": "myrrh",
+          "name": "ミルラ"
+        },
+        {
+          "id": "gum",
+          "name": "グム"
+        },
+        {
+          "id": "shirayuki",
+          "name": "シラユキ"
+        },
+        {
+          "id": "gitano",
+          "name": "ギターノ"
+        },
+        {
+          "id": "haze",
+          "name": "ヘイズ"
+        },
+        {
+          "id": "quora",
+          "name": "クオーラ"
+        },
+        {
+          "id": "deepcolor",
+          "name": "ディピカ"
+        },
+        {
+          "id": "perfumer",
+          "name": "パフューマー"
+        },
+        {
+          "id": "earthspirit",
+          "name": "アーススピリット"
+        },
+        {
+          "id": "gravel",
+          "name": "グラベル"
+        },
+        {
+          "id": "rope",
+          "name": "ロープ"
+        },
+        {
+          "id": "meteor",
+          "name": "メテオ"
+        },
+        {
+          "id": "mouse",
+          "name": "ムース"
+        },
+        {
+          "id": "matoinaru",
+          "name": "マトイマル"
+        },
+        {
+          "id": "estelle",
+          "name": "エステル"
+        },
+        {
+          "id": "bee_hunter",
+          "name": "ビーハンター"
+        },
+        {
+          "id": "may",
+          "name": "メイ"
+        },
+        {
+          "id": "sussurro",
+          "name": "ススーロ"
+        },
+        {
+          "id": "tenninka",
+          "name": "テンニンカ"
+        },
+        {
+          "id": "june",
+          "name": "ジュナー"
+        },
+        {
+          "id": "vermillion",
+          "name": "ヴァーミル"
+        },
+        {
+          "id": "ambriel",
+          "name": "アンブリエル"
+        },
+        {
+          "id": "seiryu",
+          "name": "セイリュウ"
+        },
+        {
+          "id": "utage",
+          "name": "ウタゲ"
+        },
+        {
+          "id": "cutter",
+          "name": "カッター"
+        },
+        {
+          "id": "podenco",
+          "name": "ポデンコ"
+        },
+        {
+          "id": "click",
+          "name": "カシャ"
+        },
+        {
+          "id": "acid_drop",
+          "name": "アシッドドロップ"
+        },
+        {
+          "id": "bubble",
+          "name": "バブル"
+        },
+        {
+          "id": "jackie",
+          "name": "ジャッキー"
+        },
+        {
+          "id": "pinecone",
+          "name": "パインコーン"
+        },
+        {
+          "id": "beanstalk",
+          "name": "ビーンストーク"
+        },
+        {
+          "id": "indigo",
+          "name": "インディゴ"
+        },
+        {
+          "id": "roberta",
+          "name": "ロベルタ"
+        },
+        {
+          "id": "pudding",
+          "name": "プリン"
+        },
+        {
+          "id": "quartz",
+          "name": "クォーツ"
+        },
+        {
+          "id": "caper",
+          "name": "ケイパー"
+        },
+        {
+          "id": "ruthnada",
+          "name": "ルトナダ"
+        },
+        {
+          "id": "contrail",
+          "name": "コントレイル"
+        },
+        {
+          "id": "snegurochka",
+          "name": "スネグーラチカ"
+        },
+        {
+          "id": "acolt",
+          "name": "アコルト"
+        },
+        {
+          "id": "vanilla",
+          "name": "バニラ"
+        },
+        {
+          "id": "plume",
+          "name": "プリュム"
+        },
+        {
+          "id": "popukar",
+          "name": "ポプカル"
+        },
+        {
+          "id": "melantha",
+          "name": "メランサ"
+        },
+        {
+          "id": "cardi",
+          "name": "カーディ"
+        },
+        {
+          "id": "beagle",
+          "name": "ビーグル"
+        },
+        {
+          "id": "catapult",
+          "name": "カタパルト"
+        },
+        {
+          "id": "kroos",
+          "name": "クルース"
+        },
+        {
+          "id": "hibiscus",
+          "name": "ハイビスカス"
+        },
+        {
+          "id": "orchid",
+          "name": "オーキッド"
+        },
+        {
+          "id": "durin",
+          "name": "ドゥリン"
+        },
+        {
+          "id": "justice_knight",
+          "name": "ジャスティスナイト"
+        },
+        {
+          "id": "lancet_2",
+          "name": "Lancet-2"
+        },
+        {
+          "id": "u_official",
+          "name": "U-Official"
+        }
+      ]
+    },
+    {
+      "id": "arknights_endfield",
+      "name": "アークナイツ：エンドフィールド",
+      "characters": [
+        {
+          "id": "laevatain",
+          "name": "レーヴァテイン"
+        },
+        {
+          "id": "gilberta",
+          "name": "ギルベルタ"
+        },
+        {
+          "id": "yvonne",
+          "name": "イヴォンヌ"
+        },
+        {
+          "id": "tintin",
+          "name": "タンタン"
+        },
+        {
+          "id": "rossi",
+          "name": "ロッシ"
+        },
+        {
+          "id": "zoan_fanyi",
+          "name": "ゾアン・ファンイ"
+        },
+        {
+          "id": "mi_fu",
+          "name": "ミ・フ"
+        },
+        {
+          "id": "camille",
+          "name": "カミーユ"
+        },
+        {
+          "id": "okgi",
+          "name": "オクギ"
+        },
+        {
+          "id": "rino",
+          "name": "リーノ"
+        },
+        {
+          "id": "typholos",
+          "name": "ティフォロス"
+        },
+        {
+          "id": "puciena",
+          "name": "プチエナ"
+        },
+        {
+          "id": "ember",
+          "name": "エンバー"
+        },
+        {
+          "id": "alderia",
+          "name": "アルデリア"
+        },
+        {
+          "id": "last_light",
+          "name": "ラストライト"
+        },
+        {
+          "id": "fluorite",
+          "name": "フローライト"
+        },
+        {
+          "id": "pelica",
+          "name": "ペリカ"
+        },
+        {
+          "id": "chen_senyu",
+          "name": "チェン・センユー"
+        },
+        {
+          "id": "arclight",
+          "name": "アークライト"
+        },
+        {
+          "id": "ivyena",
+          "name": "アイビーエナ"
+        },
+        {
+          "id": "snowshine",
+          "name": "スノーシャイン"
+        },
+        {
+          "id": "zaihi",
+          "name": "ザイヒ"
+        },
+        {
+          "id": "akekuri",
+          "name": "アケクリ"
+        },
+        {
+          "id": "estella",
+          "name": "エステーラ"
+        },
+        {
+          "id": "tangtang",
+          "name": "汤汤"
+        },
+        {
+          "id": "luoxi",
+          "name": "洛茜"
+        },
+        {
+          "id": "zhuang_fangyi",
+          "name": "庄方宜"
+        },
+        {
+          "id": "mi_fu_cn",
+          "name": "弭弗"
+        },
+        {
+          "id": "master",
+          "name": "管理人"
+        }
+      ]
+    },
+    {
+      "id": "zenless_zone_zero",
+      "name": "ゼンレスゾーンゼロ",
+      "characters": [
+        {
+          "id": "anby",
+          "name": "アンビー",
+          "aliases": [
+            "0号アンビー"
+          ]
+        },
+        {
+          "id": "nicole",
+          "name": "ニコ"
+        },
+        {
+          "id": "corin",
+          "name": "カリン"
+        },
+        {
+          "id": "grace",
+          "name": "グレース"
+        },
+        {
+          "id": "soldier_11",
+          "name": "11号"
+        },
+        {
+          "id": "nekomata",
+          "name": "猫又"
+        },
+        {
+          "id": "koleda",
+          "name": "クレタ"
+        },
+        {
+          "id": "rina",
+          "name": "リナ"
+        },
+        {
+          "id": "ellen",
+          "name": "エレン"
+        },
+        {
+          "id": "zhu_yuan",
+          "name": "朱鳶"
+        },
+        {
+          "id": "qingyi",
+          "name": "青衣"
+        },
+        {
+          "id": "jane_doe",
+          "name": "ジェーン"
+        },
+        {
+          "id": "caesar",
+          "name": "シーザー"
+        },
+        {
+          "id": "burnice",
+          "name": "バーニス"
+        },
+        {
+          "id": "yanagi",
+          "name": "柳"
+        },
+        {
+          "id": "miyabi",
+          "name": "星見雅"
+        },
+        {
+          "id": "astra_yao",
+          "name": "アストラ"
+        },
+        {
+          "id": "evelyn",
+          "name": "イヴリン"
+        },
+        {
+          "id": "trigger",
+          "name": "トリガー"
+        },
+        {
+          "id": "vivian",
+          "name": "ビビアン"
+        },
+        {
+          "id": "yixuan",
+          "name": "儀玄"
+        },
+        {
+          "id": "yuzuha",
+          "name": "浮波柚葉"
+        },
+        {
+          "id": "alice",
+          "name": "アリス"
+        },
+        {
+          "id": "lucia",
+          "name": "リュシア"
+        },
+        {
+          "id": "idely",
+          "name": "イドリー"
+        },
+        {
+          "id": "dairin",
+          "name": "ダイアリン"
+        },
+        {
+          "id": "chihiro",
+          "name": "千夏"
+        },
+        {
+          "id": "aria",
+          "name": "アリア"
+        },
+        {
+          "id": "nangong_yu",
+          "name": "南宮羽"
+        },
+        {
+          "id": "xixia",
+          "name": "シーシィア"
+        },
+        {
+          "id": "promeia",
+          "name": "プロメイア"
+        },
+        {
+          "id": "verina",
+          "name": "ヴェリナ"
+        },
+        {
+          "id": "pyrois",
+          "name": "ピュロイス"
+        },
+        {
+          "id": "normoo",
+          "name": "ノルムー"
+        },
+        {
+          "id": "remiel",
+          "name": "レミエール"
+        },
+        {
+          "id": "sigrid",
+          "name": "シグリッド"
+        },
+        {
+          "id": "claretta",
+          "name": "クラレッタ"
+        },
+        {
+          "id": "piper",
+          "name": "パイパー"
+        },
+        {
+          "id": "lucy",
+          "name": "ルーシー"
+        },
+        {
+          "id": "souka",
+          "name": "蒼角"
+        }
+      ]
+    },
+    {
+      "id": "honkai_star_rail",
+      "name": "崩壊：スターレイル",
+      "characters": [
+        {
+          "id": "trailblazer",
+          "name": "開拓者",
+          "aliases": [
+            "星",
+            "女性開拓者",
+            "壊滅開拓者",
+            "存護開拓者",
+            "調和開拓者",
+            "記憶開拓者",
+            "愉悦開拓者"
+          ]
+        },
+        {
+          "id": "march_7th",
+          "name": "三月なのか",
+          "aliases": [
+            "三月なのか（巡狩）"
+          ]
+        },
+        {
+          "id": "himeko",
+          "name": "姫子",
+          "aliases": [
+            "姫子・旅立ち"
+          ]
+        },
+        {
+          "id": "asta",
+          "name": "アスター"
+        },
+        {
+          "id": "herta",
+          "name": "ヘルタ",
+          "aliases": [
+            "マダム・ヘルタ"
+          ]
+        },
+        {
+          "id": "bronya",
+          "name": "ブローニャ"
+        },
+        {
+          "id": "seele",
+          "name": "ゼーレ"
+        },
+        {
+          "id": "clara",
+          "name": "クラーラ"
+        },
+        {
+          "id": "bailu",
+          "name": "白露"
+        },
+        {
+          "id": "serval",
+          "name": "セーバル"
+        },
+        {
+          "id": "natasha",
+          "name": "ナターシャ"
+        },
+        {
+          "id": "pela",
+          "name": "ペラ"
+        },
+        {
+          "id": "qingque",
+          "name": "青雀"
+        },
+        {
+          "id": "tingyun",
+          "name": "停雲",
+          "aliases": [
+            "帰忘の流離人",
+            "星5停雲"
+          ]
+        },
+        {
+          "id": "sushang",
+          "name": "素裳"
+        },
+        {
+          "id": "yukong",
+          "name": "御空"
+        },
+        {
+          "id": "hook",
+          "name": "フック"
+        },
+        {
+          "id": "kafka",
+          "name": "カフカ"
+        },
+        {
+          "id": "silver_wolf",
+          "name": "銀狼",
+          "aliases": [
+            "銀狼LV.999"
+          ]
+        },
+        {
+          "id": "fu_xuan",
+          "name": "符玄"
+        },
+        {
+          "id": "lynx",
+          "name": "リンクス"
+        },
+        {
+          "id": "topaz",
+          "name": "トパーズ"
+        },
+        {
+          "id": "guinaifen",
+          "name": "桂乃芬"
+        },
+        {
+          "id": "jingliu",
+          "name": "鏡流"
+        },
+        {
+          "id": "xueyi",
+          "name": "雪衣"
+        },
+        {
+          "id": "ruan_mei",
+          "name": "ルアン・メェイ"
+        },
+        {
+          "id": "huohuo",
+          "name": "フォフォ"
+        },
+        {
+          "id": "hanya",
+          "name": "寒鴉"
+        },
+        {
+          "id": "black_swan",
+          "name": "ブラックスワン"
+        },
+        {
+          "id": "sparkle",
+          "name": "花火"
+        },
+        {
+          "id": "acheron",
+          "name": "黄泉"
+        },
+        {
+          "id": "robin",
+          "name": "ロビン",
+          "aliases": [
+            "ロビン・夏空の歌"
+          ]
+        },
+        {
+          "id": "firefly",
+          "name": "ホタル"
+        },
+        {
+          "id": "jade",
+          "name": "ジェイド"
+        },
+        {
+          "id": "yunli",
+          "name": "雲璃"
+        },
+        {
+          "id": "feixiao",
+          "name": "飛霄"
+        },
+        {
+          "id": "lingsha",
+          "name": "霊砂"
+        },
+        {
+          "id": "rappa",
+          "name": "乱破"
+        },
+        {
+          "id": "aglaea",
+          "name": "アグライア"
+        },
+        {
+          "id": "tribbie",
+          "name": "トリビー"
+        },
+        {
+          "id": "castorice",
+          "name": "キャストリス"
+        },
+        {
+          "id": "hyacine",
+          "name": "ヒアンシー"
+        },
+        {
+          "id": "cipher",
+          "name": "サフェル"
+        },
+        {
+          "id": "cyrene",
+          "name": "キュレネ"
+        },
+        {
+          "id": "evernight",
+          "name": "長夜月"
+        },
+        {
+          "id": "cerydra",
+          "name": "ケリュドラ"
+        },
+        {
+          "id": "dahlia",
+          "name": "ダリア"
+        },
+        {
+          "id": "sparkle_alt",
+          "name": "火花"
+        },
+        {
+          "id": "yaoguang",
+          "name": "爻光"
+        },
+        {
+          "id": "hiyu",
+          "name": "緋英"
+        },
+        {
+          "id": "fate_rin",
+          "name": "遠坂凛"
+        },
+        {
+          "id": "fate_saber",
+          "name": "セイバー"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "name": "その他の原作作品",
+      "characters": []
+    },
+    {
+      "id": "vtuber",
+      "name": "Vtuber",
+      "characters": [
+        {
+          "id": "amamiya_kokoro",
+          "name": "天宮こころ"
+        },
+        {
+          "id": "nachoneko",
+          "name": "なちょ猫"
+        },
+        {
+          "id": "shina_yuika",
+          "name": "椎名唯華"
+        },
+        {
+          "id": "shigure_ui",
+          "name": "しぐれうい"
+        },
+        {
+          "id": "sakamata_kuroe",
+          "name": "沙花叉クロヱ"
+        },
+        {
+          "id": "shirakami_hubuki",
+          "name": "白上フブキ"
+        },
+        {
+          "id": "rindo_chihaya",
+          "name": "竜胆ちはや"
+        }
+      ]
+    },
+    {
+      "id": "original",
+      "name": "オリジナル作品",
+      "characters": []
+    }
+  ]
+}

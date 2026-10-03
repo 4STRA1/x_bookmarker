@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>アプリを最新にする</title>
+<style>
+  body{font:15px/1.7 system-ui,sans-serif;margin:0;padding:16px;background:#161b2e;color:#ecebf2}
+  main{max-width:520px;margin:0 auto;display:grid;gap:12px}
+  button,a.btn{appearance:none;border:0;border-radius:10px;min-height:48px;padding:0 16px;font:inherit;display:flex;align-items:center;justify-content:center;text-decoration:none;background:#f0b429;color:#1a1400;font-weight:700}
+  a.btn{background:#29314f;color:#ecebf2;font-weight:400}
+  pre{white-space:pre-wrap;background:#0e1220;padding:12px;border-radius:8px;margin:0}
+  p{margin:0;color:#9ba1c0;font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+  <h1 style="font-size:1.1rem;margin:0">アプリを最新にする</h1>
+  <p>アプリ本体のキャッシュと Service Worker だけを削除します。投稿とタグ(IndexedDB)には触れません。</p>
+  <button id="go" type="button">キャッシュを削除して更新</button>
+  <pre id="out">待機中</pre>
+  <a class="btn" href="../index.html">アプリを開く</a>
+</main>
+<script>
+const out = document.getElementById('out');
+const log = (s) => { out.textContent += '\n' + s; };
+document.getElementById('go').onclick = async () => {
+  out.textContent = '開始';
+  try {
+    const regs = await navigator.serviceWorker.getRegistrations();
+    for (const r of regs) { await r.unregister(); }
+    log(`Service Worker 解除: ${regs.length}件`);
+  } catch (e) { log('SW解除エラー: ' + e); }
+  try {
+    const keys = await caches.keys();
+    for (const k of keys) { await caches.delete(k); }
+    log(`キャッシュ削除: ${JSON.stringify(keys)}`);
+  } catch (e) { log('キャッシュ削除エラー: ' + e); }
+  log('完了。「アプリを開く」を押してください(開いたら画面上部に v5 と表示されます)');
+};
+</script>
+</body>
+</html>

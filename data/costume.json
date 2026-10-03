@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "category": "costume",
+  "name": "コスチューム",
+  "items": [
+    {
+      "id": "nude",
+      "name": "全裸"
+    },
+    {
+      "id": "semi_nude",
+      "name": "腕・脚のみ着衣"
+    },
+    {
+      "id": "under_wear",
+      "name": "下着"
+    },
+    {
+      "id": "wearing",
+      "name": "着衣"
+    },
+    {
+      "id": "school_uniform",
+      "name": "学生服"
+    },
+    {
+      "id": "swimsuit",
+      "name": "水着"
+    },
+    {
+      "id": "school_swimsuit",
+      "name": "スク水"
+    },
+    {
+      "id": "competitive_swimsuit",
+      "name": "競泳水着"
+    },
+    {
+      "id": "bikini",
+      "name": "ビキニ"
+    },
+    {
+      "id": "maid_uniform",
+      "name": "メイド服"
+    },
+    {
+      "id": "bunny_uniform",
+      "name": "バニー服"
+    },
+    {
+      "id": "reverse_bunny",
+      "name": "逆バニー"
+    },
+    {
+      "id": "cosplay",
+      "name": "コスプレ"
+    },
+    {
+      "id": "japanese_wear",
+      "name": "和服・浴衣"
+    },
+    {
+      "id": "nude_wearing",
+      "name": "裸+着衣"
+    },
+    {
+      "id": "pantyhose",
+      "name": "ストッキング"
+    },
+    {
+      "id": "tights",
+      "name": "タイツ"
+    },
+    {
+      "id": "idol_uniform",
+      "name": "アイドル服"
+    },
+    {
+      "id": "sister_uniform",
+      "name": "シスター服"
+    },
+    {
+      "id": "camisole",
+      "name": "キャミソール"
+    },
+    {
+      "id": "dress",
+      "name": "ドレス"
+    },
+    {
+      "id": "top_less",
+      "name": "胸だけ露出"
+    },
+    {
+      "id": "under_less",
+      "name": "下だけ露出"
+    },
+    {
+      "id": "hat",
+      "name": "帽子"
+    },
+    {
+      "id": "under_shift",
+      "name": "下着ずらし"
+    }
+  ]
+}
