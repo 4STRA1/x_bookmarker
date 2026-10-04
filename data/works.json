@@ -909,6 +909,13 @@
           "aliases": [
             "エリナ"
           ]
+        },
+        {
+          "id": "itagaki_kanoe",
+          "name": "板垣カノエ",
+          "aliases": [
+            "カノエ"
+          ]
         }
       ]
     },
@@ -962,7 +969,7 @@
           "name": "コロンビーナ"
         },
         {
-          "id": "dahlia",
+          "id": "dahlia_gen",
           "name": "ダリア"
         },
         {
@@ -978,7 +985,7 @@
           "name": "ドリー"
         },
         {
-          "id": "durin",
+          "id": "durin_gen",
           "name": "ドゥリン"
         },
         {
@@ -1427,7 +1434,7 @@
           "name": "プリカ"
         },
         {
-          "id": "mint",
+          "id": "mint_NIKKE",
           "name": "ミント"
         },
         {
@@ -1545,7 +1552,7 @@
           "name": "エマ"
         },
         {
-          "id": "dorothy",
+          "id": "dorothy_NIKKE",
           "name": "ドロシー"
         },
         {
@@ -1553,7 +1560,7 @@
           "name": "エレグ"
         },
         {
-          "id": "sora",
+          "id": "sora_NIKKE",
           "name": "ソラ"
         },
         {
@@ -1641,7 +1648,7 @@
           "name": "クレイ"
         },
         {
-          "id": "alice",
+          "id": "alice_NIKKE",
           "name": "アリス"
         },
         {
@@ -1773,7 +1780,7 @@
           "name": "アドミ"
         },
         {
-          "id": "aria",
+          "id": "aria_NIKKE",
           "name": "アリア"
         },
         {
@@ -2519,7 +2526,7 @@
           "name": "アカフユ"
         },
         {
-          "id": "kirara",
+          "id": "kirara_arc",
           "name": "キララ"
         },
         {
@@ -3394,7 +3401,7 @@
           "name": "フック"
         },
         {
-          "id": "kafka",
+          "id": "kafka_zzz",
           "name": "カフカ"
         },
         {
@@ -3453,7 +3460,7 @@
           "name": "黄泉"
         },
         {
-          "id": "robin",
+          "id": "robin_zzz",
           "name": "ロビン",
           "aliases": [
             "ロビン・夏空の歌"
@@ -3577,6 +3584,18 @@
         {
           "id": "rindo_chihaya",
           "name": "竜胆ちはや"
+        },
+        {
+          "id": "mizumiya_su",
+          "name": "水宮枢"
+        },
+        {
+          "id": "tokoyami_towa",
+          "name": "常闇トワ"
+        },
+        {
+          "id": "nakiri_ayame",
+          "name": "百鬼あやめ"
         }
       ]
     },
