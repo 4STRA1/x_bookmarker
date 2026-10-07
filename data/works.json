@@ -923,6 +923,18 @@
           "aliases": [
             "スミカ"
           ]
+        },
+        {
+          "id": "yurizono_seia",
+          "name": "百合園セイア"
+        },
+        {
+          "id": "vabuki_syuro",
+          "name": "箭吹シュロ"
+        },
+        {
+          "id": "amau_ako",
+          "name": "天雨アコ"
         }
       ]
     },
@@ -1374,6 +1386,22 @@
         {
           "id": "iasha",
           "name": "ヤフォダ"
+        },
+        {
+          "id": "varessa",
+          "name": "ヴァレサ"
+        },
+        {
+          "id": "vodyanitsa",
+          "name": "ヴォジャニーツァ"
+        },
+        {
+          "id": "kaisei",
+          "name": "カイセイ"
+        },
+        {
+          "id": "shiratori",
+          "name": "シラトリ"
         }
       ]
     },
@@ -1961,6 +1989,18 @@
         {
           "id": "naga",
           "name": "ナガ"
+        },
+        {
+          "id": "ceyren",
+          "name": "セイレーン"
+        },
+        {
+          "id": "noise",
+          "name": "ノイズ"
+        },
+        {
+          "id": "leviathan",
+          "name": "レヴィアタン"
         }
       ]
     },
@@ -3023,6 +3063,18 @@
         {
           "id": "u_official",
           "name": "U-Official"
+        },
+        {
+          "id": "mon3tr",
+          "name": "Mon3tr"
+        },
+        {
+          "id": "ebrana",
+          "name": "エブラナ"
+        },
+        {
+          "id": "teresia",
+          "name": "テレジア"
         }
       ]
     },
@@ -3556,13 +3608,30 @@
         {
           "id": "fate_saber",
           "name": "セイバー"
+        },
+        {
+          "id": "pearl",
+          "name": "パール"
         }
       ]
     },
     {
       "id": "other",
       "name": "その他の原作作品",
-      "characters": []
+      "characters": [
+        {
+          "id": "fam_sool",
+          "name": "ファムスール"
+        },
+        {
+          "id": "arcana_shadow",
+          "name": "アルカナシャドウ"
+        },
+        {
+          "id": "labyrinth",
+          "name": "ラビュリンス"
+        }
+      ]
     },
     {
       "id": "vtuber",
@@ -3611,6 +3680,38 @@
         {
           "id": "yukihana_rami",
           "name": "雪花ラミィ"
+        },
+        {
+          "id": "nekomata_okayu",
+          "name": "猫又おかゆ"
+        },
+        {
+          "id": "achichi_mera",
+          "name": "熱千めら"
+        },
+        {
+          "id": "azki",
+          "name": "AZKI"
+        },
+        {
+          "id": "arusu_arumaru",
+          "name": "アルスアルマル"
+        },
+        {
+          "id": "okami_mio",
+          "name": "大神ミオ"
+        },
+        {
+          "id": "shirokane_noel",
+          "name": "白銀ノエル"
+        },
+        {
+          "id": "suzuhara_ruru",
+          "name": "鈴原るる"
+        },
+        {
+          "id": "mococo",
+          "name": "モココ"
         }
       ]
     },
@@ -3618,6 +3719,61 @@
       "id": "original",
       "name": "オリジナル作品",
       "characters": []
+    },
+    {
+      "id": "azul_lane",
+      "name": "アズレン",
+      "characters": [
+        {
+          "id": "unicorn",
+          "name": "ユニコーン"
+        }
+      ]
+    },
+    {
+      "id": "fate",
+      "name": "FGO",
+      "characters": [
+        {
+          "id": "iria",
+          "name": "イリヤ"
+        }
+      ]
+    },
+    {
+      "id": "project_sekai",
+      "name": "プロセカ",
+      "characters": []
+    },
+    {
+      "id": "astral_party",
+      "name": "アスパ",
+      "characters": []
+    },
+    {
+      "id": "pokemon",
+      "name": "ポケモン",
+      "characters": [
+        {
+          "id": "pokemon_gokko",
+          "name": "ポケモンごっこ"
+        }
+      ]
+    },
+    {
+      "id": "touhou_project",
+      "name": "東方Project",
+      "characters": []
+    },
+    {
+      "id": "meicho",
+      "name": "鳴潮",
+      "characters": [
+        {
+          "id": "cantarella",
+          "name": "カンタレラ"
+        }
+      ]
     }
   ]
 }

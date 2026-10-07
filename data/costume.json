@@ -106,6 +106,10 @@
     {
       "id": "broken_pantyhose",
       "name": "破れストッキング"
+    },
+    {
+      "id": "sports_wear",
+      "name": "体操服"
     }
   ]
 }

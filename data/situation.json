@@ -178,6 +178,22 @@
     {
       "id": "lesbian",
       "name": "百合"
+    },
+    {
+      "id": "water_side",
+      "name": "水辺"
+    },
+    {
+      "id": "drink_com",
+      "name": "飲精"
+    },
+    {
+      "id": "sit_position",
+      "name": "座位"
+    },
+    {
+      "id": "front_standing",
+      "name": "対面立位"
     }
   ]
 }
