@@ -916,6 +916,13 @@
           "aliases": [
             "カノエ"
           ]
+        },
+        {
+          "id": "komori_sumika",
+          "name": "小森スミカ",
+          "aliases": [
+            "スミカ"
+          ]
         }
       ]
     },
@@ -1950,6 +1957,10 @@
         {
           "id": "doro",
           "name": "ドロシー"
+        },
+        {
+          "id": "naga",
+          "name": "ナガ"
         }
       ]
     },
@@ -3596,6 +3607,10 @@
         {
           "id": "nakiri_ayame",
           "name": "百鬼あやめ"
+        },
+        {
+          "id": "yukihana_rami",
+          "name": "雪花ラミィ"
         }
       ]
     },
