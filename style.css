@@ -733,3 +733,7 @@ dialog[open] { display: flex; flex-direction: column; }
 
 /* ヘッダー右側のボタン */
 .top-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+
+/* 付与済みタグ一覧: カテゴリ見出し */
+.tag-group { flex: 0 0 100%; margin: 8px 0 2px; color: var(--accent); font-size: .8rem; font-weight: 700; }
+.tag-group:first-child { margin-top: 2px; }

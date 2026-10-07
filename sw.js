@@ -7,7 +7,7 @@
      (JSONを更新しても古い内容が使われ続けない)
    - 投稿データは IndexedDB に入っているため、本体がキャッシュされていればオフラインでも閲覧可能
    - X上の画像・動画 (外部オリジン) には介入しない */
-const CACHE = 'xbm-viewer-v5';
+const CACHE = 'xbm-viewer-v6';
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest', 'icon.svg'];
 const MASTER = ['data/works.json', 'data/attribute.json', 'data/costume.json', 'data/situation.json'];
 

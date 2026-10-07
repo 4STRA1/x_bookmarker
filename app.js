@@ -7,7 +7,7 @@
    ========================================================== */
 (() => {
   /* ---------------- 定数 ---------------- */
-  const APP_VERSION = '5'; // sw.js の CACHE 名と合わせる。画面に表示して、古い版が動いていないか確認できるようにする
+  const APP_VERSION = '6'; // sw.js の CACHE 名と合わせる。画面に表示して、古い版が動いていないか確認できるようにする
   const PAGE_SIZE = 20;
   const MAX_TAGS = 10;
   const MAX_TAG_LEN = 10;
@@ -55,6 +55,8 @@
 
   const norm = (s) => String(s ?? '').normalize('NFKC').toLowerCase();
   const tagKey = (s) => norm(s).trim();
+  /** 検索・予測変換用: ひらがなをカタカナに寄せる (あすな → アスナ)。タグの同一判定(tagKey)には使わない */
+  const foldKana = (s) => norm(s).replace(/[\u3041-\u3096]/g, (c) => String.fromCharCode(c.charCodeAt(0) + 0x60));
   const cpLen = (s) => [...s].length;
   const debounce = (fn, ms) => {
     let t;
@@ -366,10 +368,26 @@
     render({ scroll: true });
   }
 
+  /** 画面外に出た動画は一時停止、戻ってきたら(自動停止したものだけ)再開する */
+  const visIO = 'IntersectionObserver' in window
+    ? new IntersectionObserver((entries) => {
+        for (const en of entries) {
+          const v = en.target;
+          if (!v.isConnected) { visIO.unobserve(v); continue; }
+          if (!en.isIntersecting) {
+            if (!v.paused && !v.ended) { v._autoPaused = true; v.pause(); }
+          } else if (v._autoPaused) {
+            v._autoPaused = false;
+            v.play().catch(() => {});
+          }
+        }
+      }, { threshold: 0.15 })
+    : { observe() {}, unobserve() {} };
+
   /** 表示中のDOMを破棄。読み込み中の画像・動画も止めてメモリを解放する */
   function teardownMedia(root) {
     for (const m of root.querySelectorAll('img, video')) {
-      if (m.tagName === 'VIDEO') m.pause();
+      if (m.tagName === 'VIDEO') { visIO.unobserve(m); m.pause(); }
       m.removeAttribute('src');
       if (m.tagName === 'VIDEO') m.load();
     }
@@ -688,6 +706,7 @@
       if (video) {
         const dead = video;
         video = null;
+        visIO.unobserve(dead);
         dead.pause();
         dead.removeAttribute('src');
         dead.load();
@@ -712,7 +731,8 @@
     const begin = (mode) => {
       destroy();
       clearNote();
-      const vid = h('video', { controls: true, playsinline: true, 'webkit-playsinline': true, preload: 'auto' });
+      const vid = h('video', { controls: true, playsinline: true, 'webkit-playsinline': true, preload: 'auto', loop: true });
+      vid.loop = true; // ネイティブループ (再読み込みなしで先頭へ戻るため最もシームレス)
       video = vid;
       if (thumb) vid.setAttribute('poster', thumb);
       slide.classList.add('buffering');
@@ -724,6 +744,9 @@
       vid.addEventListener('play', () => {
         for (const o of document.querySelectorAll('video')) if (o !== vid) o.pause(); // 他の動画は停止
       });
+      // loop が効かない環境(一部のHLS等)向けの保険: 終了したら即座に先頭から再生
+      vid.addEventListener('ended', () => { if (vid === video) { vid.currentTime = 0; vid.play().catch(() => {}); } });
+      visIO.observe(vid); // 画面外に出たら一時停止して負荷を下げる
       vid.addEventListener('error', () => {
         if (vid !== video || !vid.isConnected) return; // 破棄時の副作用は無視
         const code = vid.error ? vid.error.code : 0;
@@ -1015,7 +1038,7 @@
     const label = shortLabel(name, aliases);
     const key = tagKey(label);
     if (!key || key === tagKey(UNTAGGED_LABEL)) return null;
-    return { id: String(raw.id ?? name), name, aliases, label, key, cat, hay: norm([label, name, ...aliases].join(' ')) };
+    return { id: String(raw.id ?? name), name, aliases, label, key, cat, hay: foldKana([label, name, ...aliases].join(' ')) };
   }
 
   /** attribute.json の「ツノ」は id と name が入れ替わっているため補正する */
@@ -1181,7 +1204,7 @@
       box.append(h('p', { class: 'chip-empty', text: master.failed.length ? 'タグ候補JSONを読み込めていません。手動入力は利用できます。' : 'タグ候補を読み込み中です…' }));
       return;
     }
-    const q = norm(ed.filter).trim();
+    const q = foldKana(ed.filter).trim();
     if (q) {
       const list = master.flat.filter((it) => it.hay.includes(q)).slice(0, PICK_LIMIT);
       if (!list.length) box.append(h('p', { class: 'chip-empty', text: '該当する候補がありません' }));
@@ -1239,8 +1262,8 @@
   function renderUsed() {
     const box = $('#tag-existing');
     box.replaceChildren();
-    const q = norm(ed.filter).trim();
-    const list = ed.all.filter((x) => !master.byKey.has(tagKey(x.tag)) && (!q || norm(x.tag).includes(q))).slice(0, PICK_LIMIT);
+    const q = foldKana(ed.filter).trim();
+    const list = ed.all.filter((x) => !master.byKey.has(tagKey(x.tag)) && (!q || foldKana(x.tag).includes(q))).slice(0, PICK_LIMIT);
     if (!list.length) box.append(h('p', { class: 'chip-empty', text: ed.all.length ? '該当するタグがありません' : 'まだタグがありません' }));
     for (const { tag, count } of list) box.append(pickChip({ key: tagKey(tag), label: tag, name: tag }, () => toggleEd(tag), { sub: String(count) }));
     syncPressed(box, ed.draft);
@@ -1379,7 +1402,7 @@
   let sugOpen = false;
 
   function suggestTags(q) {
-    const nq = norm(q).trim();
+    const nq = foldKana(q).trim();
     const out = [];
     const seen = new Set();
     const push = (tag, cat, sub) => {
@@ -1401,7 +1424,7 @@
       }
       for (const { tag } of tagCounts()) {
         if (out.length >= SUG_MAX + 6) break;
-        if (!master.byKey.has(tagKey(tag)) && norm(tag).includes(nq)) push(tag, 'used', '');
+        if (!master.byKey.has(tagKey(tag)) && foldKana(tag).includes(nq)) push(tag, 'used', '');
       }
     } else {
       for (const { tag } of tagCounts().slice(0, 12)) {
@@ -1428,7 +1451,7 @@
     }
   }
 
-  /** 付与済みタグの一覧と、そのタグが付いた投稿数 (件数の多い順)。開いているときだけ描画 */
+  /** 付与済みタグの一覧と、そのタグが付いた投稿数。カテゴリごとに分け、各カテゴリ内は件数の多い順。開いているときだけ描画 */
   function renderTagAll() {
     const det = $('#s-tag-all');
     const all = tagCounts();
@@ -1436,27 +1459,44 @@
     if (!det.open) return;
     const box = $('#s-tag-all-list');
     box.replaceChildren();
-    const q = norm($('#s-tag').value).trim();
-    const list = q ? all.filter((x) => norm(x.tag).includes(q)) : all;
+    const q = foldKana($('#s-tag').value).trim();
+    const list = q ? all.filter((x) => foldKana(x.tag).includes(q)) : all;
     if (!list.length) box.append(h('p', { class: 'chip-empty', text: all.length ? '該当するタグがありません' : 'まだタグが付与されていません' }));
-    for (const { tag, count } of list.slice(0, 600)) {
-      const it = master.byKey.get(tagKey(tag));
-      box.append(
-        h('button', {
-          class: 'chip', type: 'button', dataset: { key: tagKey(tag) }, 'aria-pressed': 'false',
-          onclick: () => {
-            if (state.search.tags.some((t) => tagKey(t) === tagKey(tag))) {
-              state.search.tags = state.search.tags.filter((t) => tagKey(t) !== tagKey(tag));
-              renderSearchTagChips();
-              applySearch();
-            } else {
-              addSearchTags(tag);
-            }
-          },
-        }, [it ? catBadge(it.cat) : null, tag, h('span', { class: 'cnt', text: `${count}件` })]),
-      );
+
+    // all は件数の多い順なので、振り分けても各グループ内の順序は保たれる
+    const groups = new Map([...CATS.map((c) => [c.key, []]), ['used', []]]);
+    for (const x of list) {
+      const it = master.byKey.get(tagKey(x.tag));
+      groups.get(it ? it.cat : 'used').push({ ...x, it });
     }
-    if (list.length > 600) box.append(h('p', { class: 'chip-empty', text: `ほか ${list.length - 600} 件（入力で絞り込めます）` }));
+    const titles = { used: 'その他（手動タグ）' };
+    for (const c of CATS) titles[c.key] = c.long;
+
+    let shown = 0;
+    const LIMIT = 600;
+    for (const [cat, items] of groups) {
+      if (!items.length || shown >= LIMIT) continue;
+      box.append(h('h4', { class: 'tag-group', text: `${titles[cat]}（${items.length}）` }));
+      for (const { tag, count, it } of items) {
+        if (shown >= LIMIT) break;
+        shown++;
+        box.append(
+          h('button', {
+            class: 'chip', type: 'button', dataset: { key: tagKey(tag) }, 'aria-pressed': 'false',
+            onclick: () => {
+              if (state.search.tags.some((t) => tagKey(t) === tagKey(tag))) {
+                state.search.tags = state.search.tags.filter((t) => tagKey(t) !== tagKey(tag));
+                renderSearchTagChips();
+                applySearch();
+              } else {
+                addSearchTags(tag);
+              }
+            },
+          }, [it ? catBadge(it.cat) : null, tag, h('span', { class: 'cnt', text: `${count}件` })]),
+        );
+      }
+    }
+    if (list.length > LIMIT) box.append(h('p', { class: 'chip-empty', text: `ほか ${list.length - LIMIT} 件（入力で絞り込めます）` }));
     syncPressed(box, state.search.tags);
   }
 
@@ -1574,6 +1614,25 @@
     return `{${keys.map((k) => `${JSON.stringify(k)}:${stableStringify(v[k])}`).join(',')}}`;
   }
 
+  /** 既存の投稿に対し、画像/動画のURL(と動画サムネイル)だけを新しい内容で差し替えた複製を返す。他のフィールドは既存のまま維持 */
+  function mergeMediaUrls(existing, incoming) {
+    const out = JSON.parse(JSON.stringify(existing));
+    const nm = incoming.media && typeof incoming.media === 'object' ? incoming.media : null;
+    if (!nm) return out;
+    if (!out.media || typeof out.media !== 'object') out.media = { images: [], videos: [] };
+    for (const [key, fields] of [['images', ['url']], ['videos', ['url', 'thumbnail']]]) {
+      const src = Array.isArray(nm[key]) ? nm[key] : null;
+      if (!src) continue;
+      const dst = Array.isArray(out.media[key]) ? out.media[key] : (out.media[key] = []);
+      src.forEach((n, i) => {
+        if (!n || typeof n !== 'object') return;
+        if (!dst[i] || typeof dst[i] !== 'object') { dst[i] = { ...n }; return; }
+        for (const f of fields) if (typeof n[f] === 'string' && n[f]) dst[i][f] = n[f];
+      });
+    }
+    return out;
+  }
+
   /**
    * 1つの JSON を保存。id が既存と一致する場合は内容を比較し、
    * 少しでも差異があれば(画像・動画URLの変更を含め)既存レコードを新しい内容で完全に上書きする。
@@ -1599,12 +1658,15 @@
           if (!existing) {
             await reqProm(st.add(post), { swallow: true });
             res.added++;
-          } else if (stableStringify(existing) !== stableStringify(post)) {
-            // 内容(画像・動画URLを含む) に差異がある → 新しいデータで完全に上書き
-            await reqProm(st.put(post), { swallow: true });
-            res.updated++;
           } else {
-            res.dup++;
+            // 同一idは画像・動画のURLだけ差し替える (本文など他のフィールドとタグは維持)
+            const merged = mergeMediaUrls(existing, post);
+            if (stableStringify(merged) !== stableStringify(existing)) {
+              await reqProm(st.put(merged), { swallow: true });
+              res.updated++;
+            } else {
+              res.dup++;
+            }
           }
         } catch (e) {
           res.failed++;
@@ -1664,12 +1726,12 @@
       (a, r) => ({ added: a.added + (r.added || 0), updated: a.updated + (r.updated || 0), dup: a.dup + (r.dup || 0) }),
       { added: 0, updated: 0, dup: 0 },
     );
-    body.append(h('p', { text: `新規追加 ${sum.added}件 / 内容更新 ${sum.updated}件 / 変更なしでスキップ ${sum.dup}件（タグは保持）` }));
+    body.append(h('p', { text: `新規追加 ${sum.added}件 / URL更新 ${sum.updated}件 / 変更なしでスキップ ${sum.dup}件（タグは保持）` }));
     for (const r of results) {
       const box = h('div', { class: 'result' }, [h('p', { class: 'fname', text: r.name })]);
       if (r.error) box.append(h('p', { class: 'ng', text: r.error }));
       if (r.total != null) {
-        box.append(h('p', { text: `追加 ${r.added}件 / 更新 ${r.updated}件 / 重複 ${r.dup}件` + (r.invalid ? ` / IDなし等で無効 ${r.invalid}件` : '') + (r.failed ? ` / 保存失敗 ${r.failed}件` : '') }));
+        box.append(h('p', { text: `追加 ${r.added}件 / URL更新 ${r.updated}件 / 重複 ${r.dup}件` + (r.invalid ? ` / IDなし等で無効 ${r.invalid}件` : '') + (r.failed ? ` / 保存失敗 ${r.failed}件` : '') }));
       }
       if (r.warn) box.append(h('p', { class: 'muted', text: r.warn }));
       body.append(box);
@@ -1966,7 +2028,7 @@
       box.append(h('p', { class: 'chip-empty', text: master.failed.length ? 'タグ候補JSONを読み込めていません。下の手動入力でタグを追加できます。' : 'タグ候補を読み込み中です…' }));
       return;
     }
-    const q = norm(qs.filter).trim();
+    const q = foldKana(qs.filter).trim();
     let groups;
     if (step === 'char') {
       // 選択した作品のうち characters を持つものだけを、作品ごとに分けて表示
