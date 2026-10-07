@@ -1781,6 +1781,34 @@
     }
   }
 
+  /** カテゴリ未設定(タグマスターJSONに無い手動タグ)を jsonmaker 用に書き出す */
+  function exportUncategorized() {
+    if (!master.ready) { toast('タグ候補JSONを読み込めていないため書き出せません'); return; }
+    const list = tagCounts().filter((x) => !master.byKey.has(tagKey(x.tag)));
+    if (!list.length) { toast('カテゴリ未設定のタグはありません'); return; }
+    const payload = {
+      kind: 'xbm-uncategorized-tags', version: 1, exportedAt: new Date().toISOString(),
+      tags: list.map(({ tag, count }) => ({ name: tag, count })),
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    const href = URL.createObjectURL(blob);
+    const a = h('a', { href, download: `xbm-uncategorized-${new Date().toISOString().slice(0, 10)}.json` });
+    document.body.append(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(href), 15000);
+    toast(`未分類タグ ${list.length}件を書き出しました`);
+  }
+
+  function initUncategorizedExport() {
+    const det = $('#s-tag-all');
+    if (!det || $('#btn-export-uncat')) return;
+    const row = h('div', { class: 'form-actions', style: 'padding:0 0 10px' }, [
+      h('button', { id: 'btn-export-uncat', class: 'btn btn-sm', type: 'button', onclick: exportUncategorized }, 'カテゴリ未設定タグを書き出し（jsonmaker用）'),
+    ]);
+    det.append(row);
+  }
+
   /** 永続ストレージを要求し、タグがあるのに1週間以上書き出していなければ知らせる */
   function protectData() {
     if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
@@ -1799,6 +1827,7 @@
       if (imp && imp.parentNode) imp.parentNode.insertBefore(b, imp);
     }
     b.addEventListener('click', exportTags);
+    initUncategorizedExport();
   }
 
   /* ---------------- 全体の再構築 ---------------- */
